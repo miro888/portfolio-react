@@ -1,9 +1,11 @@
 {
     "firstName": "Tamar;",
     "lastName": "Pochkhua;",
-    "age": "24;",
-    "address": "Tbilisi, Georgia;",
+    "age": "24",
+    "address": "Tbilisi, Georgia",
     "job": "Front-End",
+    "residence": "BD",
+    "freelance": "Avialable",
     "languages": [
         {
             "language": "English",
@@ -26,6 +28,20 @@
         {
             "language": "Js",
             "level": 30
+        }
+    ],
+    "extraSkills": [
+        {
+            "icon": "Bootstrap, Materialize"
+        },
+        {
+            "icon": "Stylus, Sass, Less"
+        },
+        {
+            "icon": "Gulp, Webpack, Grunt"
+        },
+        {
+            "icon": "GIT Knowledge"
         }
     ]
 }

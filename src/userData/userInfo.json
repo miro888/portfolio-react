@@ -1,34 +1,47 @@
 {
-    "firstName":"Tamari",
-    "lastName":"lastname",
-    "age": 24,
-    "address":"Tbilisi, Georgia",
-    "job":"Front-End",
-    "languages":
-    [
+    "firstName": "Tamar;",
+    "lastName": "Pochkhua;",
+    "age": "24",
+    "address": "Tbilisi, Georgia",
+    "job": "Front-End",
+    "residence": "BD",
+    "freelance": "Avialable",
+    "languages": [
         {
-            "language":"english",
-            "level":80
+            "language": "English",
+            "level": 80
         },
         {
-            "language":"Spanish",
-            "level":60
+            "language": "Spanish",
+            "level": 60
         }
-     ],
-     "skills":
-     [
+    ],
+    "skills": [
         {
-            "language":"html",
-            "level":80
+            "language": "HTML",
+            "level": 80
         },
         {
-            "language":"css",
-            "level":60
+            "language": "CSS",
+            "level": 60
         },
         {
-            "language":"Js",
-            "level":30
+            "language": "Js",
+            "level": 30
         }
-     ]
-
+    ],
+    "extraSkills": [
+        {
+            "icon": "Bootstrap, Materialize"
+        },
+        {
+            "icon": "Stylus, Sass, Less"
+        },
+        {
+            "icon": "Gulp, Webpack, Grunt"
+        },
+        {
+            "icon": "GIT Knowledge"
+        }
+    ]
 }

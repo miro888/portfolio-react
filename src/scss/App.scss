@@ -1,8 +1,60 @@
-@import './variables.scss';
+@import "./variables.scss";
 .app {
-  background-color: $backColor;
-  display: grid;
-  grid-template-columns: 2fr 6fr 1fr;
-  gap: $offSetLevel_3;
-  
+    background-color: $backColor;
+    display: grid;
+    grid-template-columns: 2fr 6fr 1fr;
+    gap: $offSetLevel_3;
+    .sidebarLeft {
+        .lineDiv {
+            max-width: 220px;
+            height: 1px;
+            background-color: #f0f0f6;
+        }
+        .personInfo {
+            .ageInfo {
+                color: $primaryFontColor;
+                background-color: $primeColor;
+                max-width: 46px;
+                height: 24px;
+                font-size: 15px;
+                line-height: 24px;
+                // font-weight: 400;
+            }
+            .residenceInfo {
+                color: $primaryFontColor;
+                background-color: $primeColor;
+                height: 24px;
+                font-size: 15px;
+                line-height: 24px;
+                // font-weight: 400;
+            }
+            .freelanceInfo {
+                color: $primaryFontColor;
+                background-color: $primeColor;
+
+                height: 24px;
+                font-size: 15px;
+                line-height: 24px;
+                // font-weight: 400;
+            }
+            .addressInfo {
+                color: $primaryFontColor;
+                background-color: $primeColor;
+
+                height: 24px;
+                font-size: 15px;
+                line-height: 24px;
+                // font-weight: 400;
+            }
+            .jobInfo {
+                color: $primaryFontColor;
+                background-color: $primeColor;
+
+                height: 24px;
+                font-size: 15px;
+                line-height: 24px;
+                // font-weight: 400;
+            }
+        }
+    }
 }

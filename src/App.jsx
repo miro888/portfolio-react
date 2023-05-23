@@ -3,6 +3,8 @@ import person from "./userData/userInfo.json";
 
 function App() {
     const {
+        firstName,
+        lastName,
         residence,
         freelance,
         age,
@@ -11,6 +13,7 @@ function App() {
         address,
         job,
         extraSkills,
+        userImage,
     } = person;
     console.log(languages);
 
@@ -18,12 +21,16 @@ function App() {
         <div className="app">
             <div className="sidebarLeft">
                 <div>
-                    <p>Rayan Adlardard </p>
-                    <p>Dront-End developer</p>
+                    <img src={userImage} alt={firstName + lastName} />
+                    <p>{firstName + " " + lastName}</p>
+                    <p>Front-End developer</p>
                 </div>
-                <div className="lineDiv"></div>
+
                 <div className="personInfo">
-                    <p className="ageInfo">Age: {age} </p>
+                    <div className="ageDiv">
+                        <span className="ageInfo">Age:</span>
+                        <span className="ageStyle">{age}</span>
+                    </div>
                     <p className="residenceInfo">Residence: {residence}</p>
                     <p className="freelanceInfo">Freelance: {freelance}</p>
                     <p className="addressInfo">Address: {address} </p>

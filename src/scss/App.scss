@@ -11,15 +11,25 @@
             background-color: #f0f0f6;
         }
         .personInfo {
-            .ageInfo {
-                color: $primaryFontColor;
-                background-color: $primeColor;
-                max-width: 46px;
-                height: 24px;
-                font-size: 15px;
-                line-height: 24px;
-                // font-weight: 400;
+            .ageDiv {
+                display: flex;
+                justify-content: space-between;
+                .ageInfo {
+                    display: flex;
+                    padding-right: 5px;
+                    color: $primaryFontColor;
+                    background-color: $primeColor;
+
+                    height: 24px;
+                    font-size: 15px;
+                    line-height: 24px;
+
+                    .ageStyle {
+                        display: flex;
+                    }
+                }
             }
+
             .residenceInfo {
                 color: $primaryFontColor;
                 background-color: $primeColor;

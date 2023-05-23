@@ -29,7 +29,7 @@ function App() {
                     <p className="addressInfo">Address: {address} </p>
                     <p className="jobInfo">Job: {job} Developer </p>
                 </div>
-                <div className="lineDiv"></div>
+
                 <div className="langInfo">
                     <h2>Languages:</h2>
                     {languages.map((lang, index) => {
@@ -40,7 +40,7 @@ function App() {
                         );
                     })}
                 </div>
-                <div className="lineDiv"></div>
+
                 <div className="skillsInfo">
                     <h2>Skills:</h2>
                     {skills.map((skills, index) => {
@@ -54,14 +54,14 @@ function App() {
                         );
                     })}
                 </div>
-                <div className="lineDiv"></div>
+
                 <div className="extraSkillsInfo">
                     <h2>Extra Skills</h2>
                     {extraSkills.map((skills, index) => {
                         return <div key={index}>{skills.icon}</div>;
                     })}
                 </div>
-                <div className="lineDiv"></div>
+
                 <div>
                     <button id="downloadCv">DOWNLOAD CV</button>
                 </div>

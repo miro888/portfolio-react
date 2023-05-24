@@ -5,34 +5,58 @@
     grid-template-columns: 2fr 6fr 1fr;
     gap: $offSetLevel_3;
     .sidebarLeft {
-        .lineDiv {
-            max-width: 220px;
-            height: 1px;
-            background-color: #f0f0f6;
+        display: flex;
+        flex-direction: column;
+        .personImage {
+            border-radius: 50%;
+        }
+        .socIcons {
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: $offSetLevel_3;
+            border-bottom: 1.5px solid #f0f0f6;
+            .iconDiv {
+                background-color: $primaryColor;
+                padding-top: 4px;
+                padding-right: 10px;
+                padding-bottom: 6px;
+                padding-left: 10px;
+                border-radius: 50%;
+            }
         }
         .personInfo {
-            .ageDiv {
+            padding-top: $offSetLevel_3;
+            padding-bottom: $offSetLevel_3;
+            border-bottom: 1.5px solid #f0f0f6;
+            .personInfoDiv {
                 display: flex;
+                padding-bottom: 10px;
                 justify-content: space-between;
-                .ageInfo {
-                    display: flex;
-                    padding-right: 5px;
+                .ageInfo,
+                .residenceInfo,
+                .freelanceInfo,
+                .addressInfo {
+                    padding-right: 7px;
                     color: $primaryFontColor;
-                    background-color: $primeColor;
-
-                    height: 24px;
+                    background-color: $primaryColor;
                     font-size: 15px;
                     line-height: 24px;
-
-                    .ageStyle {
-                        display: flex;
-                    }
+                }
+                .ageInfo,
+                .residenceInfo,
+                .addressInfo {
+                    font-size: $fourthLevelSize;
+                    color: $primaryFontColor;
+                }
+                .freelanceStyle {
+                    font-size: $fourthLevelSize;
+                    color: #7eb942;
                 }
             }
 
             .residenceInfo {
                 color: $primaryFontColor;
-                background-color: $primeColor;
+                background-color: $primaryColor;
                 height: 24px;
                 font-size: 15px;
                 line-height: 24px;
@@ -40,7 +64,7 @@
             }
             .freelanceInfo {
                 color: $primaryFontColor;
-                background-color: $primeColor;
+                background-color: $primaryColor;
 
                 height: 24px;
                 font-size: 15px;
@@ -49,7 +73,7 @@
             }
             .addressInfo {
                 color: $primaryFontColor;
-                background-color: $primeColor;
+                background-color: $primaryColor;
 
                 height: 24px;
                 font-size: 15px;
@@ -58,12 +82,26 @@
             }
             .jobInfo {
                 color: $primaryFontColor;
-                background-color: $primeColor;
+                background-color: $primaryColor;
 
                 height: 24px;
                 font-size: 15px;
                 line-height: 24px;
                 // font-weight: 400;
+            }
+        }
+        .langInfo,
+        .skillsInfo,
+        .extraSkillsInfo {
+            padding-bottom: $offSetLevel_3;
+            border-bottom: 1.5px solid #f0f0f6;
+            h2 {
+                font-size: $thirdLevelSize;
+                color: $primaryFontColor;
+            }
+            .lang {
+                font-size: $fourthLevelSize;
+                color: $secondaryFontColor;
             }
         }
     }

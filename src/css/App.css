@@ -4,34 +4,68 @@
   grid-template-columns: 2fr 6fr 1fr;
   gap: 25px;
 }
-.app .sidebarLeft .lineDiv {
-  max-width: 220px;
-  height: 1px;
-  background-color: #f0f0f6;
-}
-.app .sidebarLeft .personInfo .ageDiv {
+.app .sidebarLeft {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.app .sidebarLeft .personImage {
+  border-radius: 50%;
+}
+.app .sidebarLeft .socIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 25px;
+  border-bottom: 1.5px solid #f0f0f6;
+}
+.app .sidebarLeft .socIcons .iconDiv {
+  background-color: #ffb400;
+  padding-top: 4px;
+  padding-right: 10px;
+  padding-bottom: 6px;
+  padding-left: 10px;
+  border-radius: 50%;
+}
+.app .sidebarLeft .personInfo {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1.5px solid #f0f0f6;
+}
+.app .sidebarLeft .personInfo .personInfoDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 10px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.app .sidebarLeft .personInfo .ageDiv .ageInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-right: 5px;
+.app .sidebarLeft .personInfo .personInfoDiv .ageInfo,
+.app .sidebarLeft .personInfo .personInfoDiv .residenceInfo,
+.app .sidebarLeft .personInfo .personInfoDiv .freelanceInfo,
+.app .sidebarLeft .personInfo .personInfoDiv .addressInfo {
+  padding-right: 7px;
   color: #2b2b2b;
   background-color: #ffb400;
-  height: 24px;
   font-size: 15px;
   line-height: 24px;
 }
-.app .sidebarLeft .personInfo .ageDiv .ageInfo .ageStyle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.app .sidebarLeft .personInfo .personInfoDiv .ageInfo,
+.app .sidebarLeft .personInfo .personInfoDiv .residenceInfo,
+.app .sidebarLeft .personInfo .personInfoDiv .addressInfo {
+  font-size: 15px;
+  color: #2b2b2b;
+}
+.app .sidebarLeft .personInfo .personInfoDiv .freelanceStyle {
+  font-size: 15px;
+  color: #7eb942;
 }
 .app .sidebarLeft .personInfo .residenceInfo {
   color: #2b2b2b;
@@ -60,4 +94,22 @@
   height: 24px;
   font-size: 15px;
   line-height: 24px;
+}
+.app .sidebarLeft .langInfo,
+.app .sidebarLeft .skillsInfo,
+.app .sidebarLeft .extraSkillsInfo {
+  padding-bottom: 25px;
+  border-bottom: 1.5px solid #f0f0f6;
+}
+.app .sidebarLeft .langInfo h2,
+.app .sidebarLeft .skillsInfo h2,
+.app .sidebarLeft .extraSkillsInfo h2 {
+  font-size: 18px;
+  color: #2b2b2b;
+}
+.app .sidebarLeft .langInfo .lang,
+.app .sidebarLeft .skillsInfo .lang,
+.app .sidebarLeft .extraSkillsInfo .lang {
+  font-size: 15px;
+  color: #767676;
 }/*# sourceMappingURL=App.css.map */

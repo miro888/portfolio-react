@@ -7,6 +7,7 @@
     .sidebarLeft {
         display: flex;
         flex-direction: column;
+        padding-left: 40px;
         .personImage {
             border-radius: 50%;
         }
@@ -60,7 +61,6 @@
                 height: 24px;
                 font-size: 15px;
                 line-height: 24px;
-                // font-weight: 400;
             }
             .freelanceInfo {
                 color: $primaryFontColor;
@@ -69,7 +69,6 @@
                 height: 24px;
                 font-size: 15px;
                 line-height: 24px;
-                // font-weight: 400;
             }
             .addressInfo {
                 color: $primaryFontColor;
@@ -78,7 +77,6 @@
                 height: 24px;
                 font-size: 15px;
                 line-height: 24px;
-                // font-weight: 400;
             }
             .jobInfo {
                 color: $primaryFontColor;
@@ -87,7 +85,6 @@
                 height: 24px;
                 font-size: 15px;
                 line-height: 24px;
-                // font-weight: 400;
             }
         }
         .langInfo,
@@ -102,6 +99,27 @@
             .lang {
                 font-size: $fourthLevelSize;
                 color: $secondaryFontColor;
+                padding-bottom: 5px;
+                #square {
+                    margin-right: 15px;
+                }
+            }
+        }
+        .buttonDiv {
+            padding-top: $offSetLevel_3;
+            padding-left: 40px;
+            #downloadCv {
+                background-color: $primaryColor;
+                border: none;
+                font-size: $fourthLevelSize;
+                color: $primaryFontColor;
+                padding-top: 10px;
+                padding-left: 40px;
+
+                .downloadIcon {
+                    padding-left: 20px;
+                    padding-right: 17px;
+                }
             }
         }
     }

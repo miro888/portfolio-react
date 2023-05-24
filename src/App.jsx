@@ -6,6 +6,8 @@ import insta from "./images/insta.svg";
 import linkdin from "./images/linkdin.svg";
 import tweet from "./images/tweet.svg";
 import yt from "./images/yt.svg";
+import square from "./images/square.svg";
+import download from "./images/download.png";
 
 function App() {
     const {
@@ -109,14 +111,20 @@ function App() {
                     {extraSkills.map((skills, index) => {
                         return (
                             <div key={index} className="lang">
+                                <>
+                                    <img src={square} alt="" id="square" />
+                                </>
                                 {skills.icon}
                             </div>
                         );
                     })}
                 </div>
 
-                <div>
-                    <button id="downloadCv">DOWNLOAD CV</button>
+                <div className="buttonDiv">
+                    <button id="downloadCv">
+                        DOWNLOAD CV
+                        <img src={download} alt="" className="downloadIcon" />
+                    </button>
                 </div>
             </div>
             <div className="middle">wall</div>

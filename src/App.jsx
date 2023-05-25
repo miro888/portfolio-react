@@ -30,13 +30,13 @@ function App() {
     return (
         <div className="app">
             <div className="sidebarLeft">
-                <div>
+                <div className="sidebarHead">
                     <img
                         src={userImage}
                         alt={firstName + lastName}
                         className="personImage"
                     />
-                    <p>{firstName + " " + lastName}</p>
+                    <p className="fullname">{firstName + " " + lastName}</p>
                     <p>Front-End developer</p>
                 </div>
                 <div className="socIcons">
@@ -149,7 +149,7 @@ function App() {
                 <div className="buttonDiv">
                     <button  id="downloadCv">
                         DOWNLOAD CV
-                        <img src={download} alt="" className="downloadIcon" />
+                        <img src={download} alt="download cv button" className="downloadIcon" />
                     </button>
                 </div>
             </div>

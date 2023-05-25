@@ -2,14 +2,24 @@
 .app {
     background-color: $backColor;
     display: grid;
-    grid-template-columns: 2fr 6fr 1fr;
+    grid-template-columns: 3fr 6fr 1fr;
     gap: $offSetLevel_3;
     .sidebarLeft {
         display: flex;
         flex-direction: column;
-        padding-left: 40px;
-        .personImage {
-            border-radius: 50%;
+        background-color: #fff;
+        padding: 30px 40px;
+        .sidebarHead {
+            max-width: 150px;
+            margin: 0 auto;
+            .personImage {
+                border-radius: 50%;
+                display: block;
+                width: 100%;
+            }
+            .fullname {
+                font-weight: bold;
+            }
         }
         .socIcons {
             display: flex;
@@ -33,6 +43,7 @@
                 display: flex;
                 padding-bottom: 10px;
                 justify-content: space-between;
+                align-items: center;
                 .ageInfo,
                 .residenceInfo,
                 .freelanceInfo,
@@ -131,17 +142,13 @@
 
         }
         .buttonDiv {
-            padding-top: $offSetLevel_3;
-            padding-left: 40px;
             #downloadCv {
                 background-color: $primaryColor;
                 cursor: pointer;
                 border: none;
                 font-size: $fourthLevelSize;
                 color: $primaryFontColor;
-                padding-top: 10px;
-                padding-left: 40px;
-
+                padding: 10px 40px;
                 .downloadIcon {
                     padding-left: 20px;
                     padding-right: 17px;

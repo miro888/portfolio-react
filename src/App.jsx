@@ -98,7 +98,7 @@ function App() {
                                 <div className="lines" style={{ border:'0.5px solid  #ffb400 ', maxWidth:'100' , borderRadius:'25' }} >
                                 
 
-                                    <div className="percentOflines" style={{border:'1px solid   #ffb400 ', width:lang.level}}>
+                                    <div className="percentOflines" style={{border:'1px solid  #ffb400 ', width:lang.level + '%'}}>
                                         
                                     </div>
                                 </div>
@@ -121,7 +121,7 @@ function App() {
                                 <div className="lines" style={{ border:'0.5px solid  #ffb400 ', maxWidth:'100' , borderRadius:'25' }} >
                                 
 
-                                    <div className="percentOflines" style={{border:'1px solid   #ffb400 ', width:skills.level}}>
+                                    <div className="percentOflines" style={{border:'1px solid   #ffb400 ', width:skills.level + '%'}}>
                                         
                                     </div>
                                 </div>

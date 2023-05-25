@@ -92,24 +92,50 @@
         .extraSkillsInfo {
             padding-bottom: $offSetLevel_3;
             border-bottom: 1.5px solid #f0f0f6;
+            
             h2 {
                 font-size: $thirdLevelSize;
                 color: $primaryFontColor;
+            }
+
+            .extraSkils{
+                font-size: $fourthLevelSize;
+                color: $secondaryFontColor;
+                padding-bottom: 5px;
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                #square {
+                    margin-right: 15px;
+                }
             }
             .lang {
                 font-size: $fourthLevelSize;
                 color: $secondaryFontColor;
                 padding-bottom: 5px;
-                #square {
-                    margin-right: 15px;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                width: 100%;
+                .languageLevel{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    padding-bottom: 5px;
                 }
+              
             }
+            .perCentage{
+                background-color: #7eb942;
+            }
+
         }
         .buttonDiv {
             padding-top: $offSetLevel_3;
             padding-left: 40px;
             #downloadCv {
                 background-color: $primaryColor;
+                cursor: pointer;
                 border: none;
                 font-size: $fourthLevelSize;
                 color: $primaryFontColor;
@@ -119,6 +145,7 @@
                 .downloadIcon {
                     padding-left: 20px;
                     padding-right: 17px;
+
                 }
             }
         }

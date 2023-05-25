@@ -1,4 +1,5 @@
 import "./scss/App.scss";
+
 import person from "./userData/userInfo.json";
 import fb from "./images/fb.svg";
 import icon from "./images/icon.svg";
@@ -19,11 +20,12 @@ function App() {
         languages,
         skills,
         address,
-        job,
+        // job,
         extraSkills,
         userImage,
+        social,
     } = person;
-    console.log(languages);
+    // console.log(languages);
 
     return (
         <div className="app">
@@ -38,9 +40,11 @@ function App() {
                     <p>Front-End developer</p>
                 </div>
                 <div className="socIcons">
+
                     <div className="iconDiv">
-                        <img src={fb} alt="Icon" />
+                        <a href='www.google.com' target="leng"> <img src={fb}  alt="Icon" /> </a>
                     </div>
+
                     <div className="iconDiv">
                         <img src={insta} alt="Icon" />
                     </div>
@@ -84,9 +88,22 @@ function App() {
                 <div className="langInfo">
                     <h2>Languages:</h2>
                     {languages.map((lang, index) => {
+                        
                         return (
                             <div key={index} className="lang">
-                                {lang.language + ": Level " + lang.level + "%"}
+                                <div className="languageLevel">
+                                <span>{lang.language} </span>       <span> {lang.level + "%"}</span> 
+                                </div>
+
+                                <div className="lines" style={{ border:'0.5px solid  #ffb400 ', maxWidth:'100' , borderRadius:'25' }} >
+                                
+
+                                    <div className="percentOflines" style={{border:'1px solid   #ffb400 ', width:lang.level}}>
+                                        
+                                    </div>
+                                </div>
+                             
+                            
                             </div>
                         );
                     })}
@@ -97,10 +114,19 @@ function App() {
                     {skills.map((skills, index) => {
                         return (
                             <div key={index} className="lang">
-                                {skills.language +
-                                    ": Level " +
-                                    skills.level +
-                                    "%;"}
+                                <div className="languageLevel">
+                                <span>{skills.language} </span>       <span> {skills.level + "%"}</span> 
+                                </div>
+
+                                <div className="lines" style={{ border:'0.5px solid  #ffb400 ', maxWidth:'100' , borderRadius:'25' }} >
+                                
+
+                                    <div className="percentOflines" style={{border:'1px solid   #ffb400 ', width:skills.level}}>
+                                        
+                                    </div>
+                                </div>
+                             
+                            
                             </div>
                         );
                     })}
@@ -110,7 +136,7 @@ function App() {
                     <h2>Extra Skills</h2>
                     {extraSkills.map((skills, index) => {
                         return (
-                            <div key={index} className="lang">
+                            <div key={index} className="extraSkils">
                                 <>
                                     <img src={square} alt="" id="square" />
                                 </>
@@ -121,7 +147,7 @@ function App() {
                 </div>
 
                 <div className="buttonDiv">
-                    <button id="downloadCv">
+                    <button  id="downloadCv">
                         DOWNLOAD CV
                         <img src={download} alt="" className="downloadIcon" />
                     </button>

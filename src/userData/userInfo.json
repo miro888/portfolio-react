@@ -7,6 +7,11 @@
     "job": "Front-End",
     "residence": "BD",
     "freelance": "Avialable",
+    "social": [ 
+        {"title":"facebook",
+        "url":"www.facebook.com"
+    }
+    ],
     "languages": [
         {
             "language": "English",

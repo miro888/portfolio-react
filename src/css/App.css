@@ -1,7 +1,7 @@
 .app {
   background-color: #e5e5e5;
   display: grid;
-  grid-template-columns: 2fr 6fr 1fr;
+  grid-template-columns: 3fr 6fr 1fr;
   gap: 25px;
 }
 .app .sidebarLeft {
@@ -12,10 +12,20 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 40px;
+  background-color: #fff;
+  padding: 30px 40px;
 }
-.app .sidebarLeft .personImage {
+.app .sidebarLeft .sidebarHead {
+  max-width: 150px;
+  margin: 0 auto;
+}
+.app .sidebarLeft .sidebarHead .personImage {
   border-radius: 50%;
+  display: block;
+  width: 100%;
+}
+.app .sidebarLeft .sidebarHead .fullname {
+  font-weight: bold;
 }
 .app .sidebarLeft .socIcons {
   display: -webkit-box;
@@ -47,6 +57,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .app .sidebarLeft .personInfo .personInfoDiv .ageInfo,
 .app .sidebarLeft .personInfo .personInfoDiv .residenceInfo,
@@ -108,31 +121,129 @@
   font-size: 18px;
   color: #2b2b2b;
 }
+.app .sidebarLeft .langInfo .extraSkils,
+.app .sidebarLeft .skillsInfo .extraSkils,
+.app .sidebarLeft .extraSkillsInfo .extraSkils {
+  font-size: 15px;
+  color: #767676;
+  padding-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.app .sidebarLeft .langInfo .extraSkils #square,
+.app .sidebarLeft .skillsInfo .extraSkils #square,
+.app .sidebarLeft .extraSkillsInfo .extraSkils #square {
+  margin-right: 15px;
+}
 .app .sidebarLeft .langInfo .lang,
 .app .sidebarLeft .skillsInfo .lang,
 .app .sidebarLeft .extraSkillsInfo .lang {
   font-size: 15px;
   color: #767676;
   padding-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
 }
-.app .sidebarLeft .langInfo .lang #square,
-.app .sidebarLeft .skillsInfo .lang #square,
-.app .sidebarLeft .extraSkillsInfo .lang #square {
-  margin-right: 15px;
+.app .sidebarLeft .langInfo .lang .languageLevel,
+.app .sidebarLeft .skillsInfo .lang .languageLevel,
+.app .sidebarLeft .extraSkillsInfo .lang .languageLevel {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 5px;
 }
-.app .sidebarLeft .buttonDiv {
-  padding-top: 25px;
-  padding-left: 40px;
+.app .sidebarLeft .langInfo .perCentage,
+.app .sidebarLeft .skillsInfo .perCentage,
+.app .sidebarLeft .extraSkillsInfo .perCentage {
+  background-color: #7eb942;
 }
 .app .sidebarLeft .buttonDiv #downloadCv {
   background-color: #ffb400;
+  cursor: pointer;
   border: none;
   font-size: 15px;
   color: #2b2b2b;
-  padding-top: 10px;
-  padding-left: 40px;
+  padding: 10px 40px;
 }
 .app .sidebarLeft .buttonDiv #downloadCv .downloadIcon {
   padding-left: 20px;
   padding-right: 17px;
+}
+.app .sideBarRight {
+  max-width: 110px;
+  height: 1315px;
+  background-color: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.app .sideBarRight .darkMode {
+  padding-top: 45px;
+  padding-bottom: 215px;
+}
+.app .sideBarRight .icons {
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.app .sideBarRight .icons .home {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ffb400;
+  position: relative;
+}
+.app .sideBarRight .icons .home .activeHome {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.app .sideBarRight .icons .iconWrapper {
+  width: 40px;
+  height: 40px;
+  background-color: #f0f0f6;
+  border-radius: 50%;
+  position: relative;
+}
+.app .sideBarRight .icons .iconWrapper .activeIcons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }/*# sourceMappingURL=App.css.map */

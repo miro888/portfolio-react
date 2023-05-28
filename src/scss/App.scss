@@ -103,13 +103,13 @@
         .extraSkillsInfo {
             padding-bottom: $offSetLevel_3;
             border-bottom: 1.5px solid #f0f0f6;
-            
+
             h2 {
                 font-size: $thirdLevelSize;
                 color: $primaryFontColor;
             }
 
-            .extraSkils{
+            .extraSkils {
                 font-size: $fourthLevelSize;
                 color: $secondaryFontColor;
                 padding-bottom: 5px;
@@ -128,18 +128,16 @@
                 justify-content: space-between;
                 flex-direction: column;
                 width: 100%;
-                .languageLevel{
+                .languageLevel {
                     width: 100%;
                     display: flex;
                     justify-content: space-between;
                     padding-bottom: 5px;
                 }
-              
             }
-            .perCentage{
+            .perCentage {
                 background-color: #7eb942;
             }
-
         }
         .buttonDiv {
             #downloadCv {
@@ -152,7 +150,54 @@
                 .downloadIcon {
                     padding-left: 20px;
                     padding-right: 17px;
+                }
+            }
+        }
+    }
+    .middle {
+    }
 
+    .sideBarRight {
+        max-width: 110px;
+        height: 1315px;
+        background-color: $navColor;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .darkMode {
+            padding-top: 45px;
+            padding-bottom: 215px;
+        }
+        .icons {
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .home {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: $primaryColor;
+                position: relative;
+                .activeHome {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+            .iconWrapper {
+                width: 40px;
+                height: 40px;
+                background-color: #f0f0f6;
+                border-radius: 50%;
+                position: relative;
+                .activeIcons {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
                 }
             }
         }

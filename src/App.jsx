@@ -16,8 +16,13 @@ import draft4 from "./images/draft4.svg";
 import draft5 from "./images/draft5.svg";
 import draft6 from "./images/draft6.svg";
 import draft7 from "./images/draft7.svg";
+import { useState } from "react";
 
 function App() {
+    const [darkMode, setdarkMode] = useState(false);
+    const toggledarkMode = () => {
+        setdarkMode(!darkMode);
+    };
     const {
         firstName,
         lastName,
@@ -35,7 +40,7 @@ function App() {
     // console.log(languages);
 
     return (
-        <div className="app">
+        <div className={`app ${darkMode ? "dark-mode" : "light-mode"}`}>
             <div className="sidebarLeft">
                 <div className="sidebarHead">
                     <img
@@ -183,8 +188,12 @@ function App() {
             </div>
             <div className="middle">wall</div>
             <div className="sideBarRight">
-                <div className="darkMode">
-                    <img src={draft7} alt="" />
+                <div className="modeButton">
+                    <img
+                        src={draft7}
+                        alt="Dark Mode"
+                        onClick={toggledarkMode}
+                    />
                 </div>
                 <div className="icons">
                     <div className="home">

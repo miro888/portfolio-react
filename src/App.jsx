@@ -16,6 +16,7 @@ import draft4 from "./images/draft4.svg";
 import draft5 from "./images/draft5.svg";
 import draft6 from "./images/draft6.svg";
 import draft7 from "./images/draft7.svg";
+import arrow from "./images/arrow.svg";
 import { useState } from "react";
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
         extraSkills,
         userImage,
         social,
+        userImage1,
     } = person;
     // console.log(languages);
 
@@ -186,7 +188,28 @@ function App() {
                     </button>
                 </div>
             </div>
-            <div className="middle">wall</div>
+            <div className="middle">
+                <div className="infoWrapper">
+                    <h2>
+                        I'm {firstName + " " + lastName}{" "}
+                        <span className="h2style">Front-End </span>
+                        Developer
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aliquam eaque eos similique suscipit? Ab doloremque
+                        soluta sunt sed illum culpa, maiores excepturi,
+                        asperiores consequatur incidunt modi voluptatibus
+                        facilis, assumenda itaque.
+                    </p>
+                    <button type="submit">
+                        HIRE ME <img src={arrow} alt="" className="arrow" />
+                    </button>
+                </div>
+                <div className="imageDiv">
+                    <img src={userImage1} alt="" />
+                </div>
+            </div>
             <div className="sideBarRight">
                 <div className="modeButton">
                     <img

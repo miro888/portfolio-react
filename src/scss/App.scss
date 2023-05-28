@@ -156,6 +156,36 @@
         }
     }
     .middle {
+        display: flex;
+        max-width: 970px;
+        height: 467px;
+
+        .infoWrapper {
+            h2 {
+                padding-top: 93px;
+                padding-bottom: 18px;
+                font-size: $firstLevelSize;
+                .h2style {
+                    color: $primaryColor;
+                }
+            }
+            p {
+                color: $secondaryFontColor;
+                font-size: $regular;
+                padding-bottom: 25px;
+            }
+            button[type="submit"] {
+                width: 154px;
+                height: 51px;
+                border: none;
+                border-radius: 5%;
+                color: $primaryFontColor;
+                background-color: $primaryColor;
+                .arrow {
+                    padding-left: 11px;
+                }
+            }
+        }
     }
 
     .sideBarRight {

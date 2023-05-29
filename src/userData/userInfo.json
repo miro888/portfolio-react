@@ -1,17 +1,14 @@
 {
-    "firstName": "Tamar",
-    "lastName": "Pochkhua",
+    "firstName": "Mirian",
+    "lastName": "Revishvili",
+    "userImage1": "https://raw.githubusercontent.com/Ninochakvetadze/img/6893d5df4a2b5e0b8b7bb817c4af0519a210247a/userimage1.svg",
     "userImage": "https://raw.githubusercontent.com/Ninochakvetadze/img/main/Profile.jpg",
     "age": "24",
     "address": "Tbilisi, Georgia",
     "job": "Front-End",
     "residence": "BD",
     "freelance": "Avialable",
-    "social": [ 
-        {"title":"facebook",
-        "url":"www.facebook.com"
-    }
-    ],
+    "social": [{ "title": "facebook", "url": "www.facebook.com" }],
     "languages": [
         {
             "language": "English",

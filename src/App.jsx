@@ -9,8 +9,21 @@ import tweet from "./images/tweet.svg";
 import yt from "./images/yt.svg";
 import square from "./images/square.svg";
 import download from "./images/download.png";
+import draft1 from "./images/draft1.svg";
+import draft2 from "./images/draft2.svg";
+import draft3 from "./images/draft3.svg";
+import draft4 from "./images/draft4.svg";
+import draft5 from "./images/draft5.svg";
+import draft6 from "./images/draft6.svg";
+import draft7 from "./images/draft7.svg";
+import arrow from "./images/arrow.svg";
+import { useState } from "react";
 
 function App() {
+    const [darkMode, setdarkMode] = useState(false);
+    const toggledarkMode = () => {
+        setdarkMode(!darkMode);
+    };
     const {
         firstName,
         lastName,
@@ -24,11 +37,12 @@ function App() {
         extraSkills,
         userImage,
         social,
+        userImage1,
     } = person;
     // console.log(languages);
 
     return (
-        <div className="app">
+        <div className={`app ${darkMode ? "dark-mode" : "light-mode"}`}>
             <div className="sidebarLeft">
                 <div className="sidebarHead">
                     <img
@@ -40,9 +54,11 @@ function App() {
                     <p>Front-End developer</p>
                 </div>
                 <div className="socIcons">
-
                     <div className="iconDiv">
-                        <a href='www.google.com' target="leng"> <img src={fb}  alt="Icon" /> </a>
+                        <a href="www.google.com" target="leng">
+                            {" "}
+                            <img src={fb} alt="Icon" />{" "}
+                        </a>
                     </div>
 
                     <div className="iconDiv">
@@ -88,22 +104,29 @@ function App() {
                 <div className="langInfo">
                     <h2>Languages:</h2>
                     {languages.map((lang, index) => {
-                        
                         return (
                             <div key={index} className="lang">
                                 <div className="languageLevel">
-                                <span>{lang.language} </span>       <span> {lang.level + "%"}</span> 
+                                    <span>{lang.language} </span>{" "}
+                                    <span> {lang.level + "%"}</span>
                                 </div>
 
-                                <div className="lines" style={{ border:'0.5px solid  #ffb400 ', maxWidth:'100' , borderRadius:'25' }} >
-                                
-
-                                    <div className="percentOflines" style={{border:'1px solid  #ffb400 ', width:lang.level + '%'}}>
-                                        
-                                    </div>
+                                <div
+                                    className="lines"
+                                    style={{
+                                        border: "0.5px solid  #ffb400 ",
+                                        maxWidth: "100",
+                                        borderRadius: "25",
+                                    }}
+                                >
+                                    <div
+                                        className="percentOflines"
+                                        style={{
+                                            border: "1px solid  #ffb400 ",
+                                            width: lang.level + "%",
+                                        }}
+                                    ></div>
                                 </div>
-                             
-                            
                             </div>
                         );
                     })}
@@ -115,18 +138,26 @@ function App() {
                         return (
                             <div key={index} className="lang">
                                 <div className="languageLevel">
-                                <span>{skills.language} </span>       <span> {skills.level + "%"}</span> 
+                                    <span>{skills.language} </span>{" "}
+                                    <span> {skills.level + "%"}</span>
                                 </div>
 
-                                <div className="lines" style={{ border:'0.5px solid  #ffb400 ', maxWidth:'100' , borderRadius:'25' }} >
-                                
-
-                                    <div className="percentOflines" style={{border:'1px solid   #ffb400 ', width:skills.level + '%'}}>
-                                        
-                                    </div>
+                                <div
+                                    className="lines"
+                                    style={{
+                                        border: "0.5px solid  #ffb400 ",
+                                        maxWidth: "100",
+                                        borderRadius: "25",
+                                    }}
+                                >
+                                    <div
+                                        className="percentOflines"
+                                        style={{
+                                            border: "1px solid   #ffb400 ",
+                                            width: skills.level + "%",
+                                        }}
+                                    ></div>
                                 </div>
-                             
-                            
                             </div>
                         );
                     })}
@@ -147,14 +178,70 @@ function App() {
                 </div>
 
                 <div className="buttonDiv">
-                    <button  id="downloadCv">
+                    <button id="downloadCv">
                         DOWNLOAD CV
-                        <img src={download} alt="download cv button" className="downloadIcon" />
+                        <img
+                            src={download}
+                            alt="download cv button"
+                            className="downloadIcon"
+                        />
                     </button>
                 </div>
             </div>
-            <div className="middle">wall</div>
-            <div className="sidebar right">navigation</div>
+            <div className="middle">
+                <div className="infoWrapper">
+                    <h2>
+                        I'm {firstName + " " + lastName}{" "}
+                        <span className="h2style">Front-End </span>
+                        Developer
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aliquam eaque eos similique suscipit? Ab doloremque
+                        soluta sunt sed illum culpa, maiores excepturi,
+                        asperiores consequatur incidunt modi voluptatibus
+                        facilis, assumenda itaque.
+                    </p>
+                    <button type="submit">
+                        HIRE ME <img src={arrow} alt="" className="arrow" />
+                    </button>
+                </div>
+                <div className="imageDiv">
+                    <img src={userImage1} alt="" />
+                </div>
+            </div>
+            <div className="sideBarRight">
+                <div className="modeButton">
+                    <img
+                        src={draft7}
+                        alt="Dark Mode"
+                        onClick={toggledarkMode}
+                    />
+                </div>
+                <div className="icons">
+                    <div className="home">
+                        <img src={draft1} alt="" className="activeHome" />
+                    </div>
+                    <div className="iconWrapper">
+                        <img src={draft2} alt="" className="activeIcons" />
+                    </div>
+
+                    <div className="iconWrapper">
+                        <img src={draft3} alt="" className="activeIcons" />
+                    </div>
+
+                    <div className="iconWrapper">
+                        <img src={draft4} alt="" className="activeIcons" />
+                    </div>
+                    <div className="iconWrapper">
+                        <img src={draft5} alt="" className="activeIcons" />
+                    </div>
+
+                    <div className="iconWrapper">
+                        <img src={draft6} alt="" className="activeIcons" />
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }

@@ -156,33 +156,80 @@
         }
     }
     .middle {
-        display: flex;
         max-width: 970px;
         height: 467px;
+        .about {
+            display: flex;
 
-        .infoWrapper {
-            h2 {
-                padding-top: 93px;
-                padding-bottom: 18px;
-                font-size: $firstLevelSize;
-                .h2style {
-                    color: $primaryColor;
+            .infoWrapper {
+                h2 {
+                    padding-top: 93px;
+                    padding-bottom: 18px;
+                    font-size: $firstLevelSize;
+                    .h2style {
+                        color: $primaryColor;
+                    }
+                }
+                p {
+                    color: $secondaryFontColor;
+                    font-size: $regular;
+                    padding-bottom: 25px;
+                }
+                button[type="submit"] {
+                    width: 154px;
+                    height: 51px;
+                    border: none;
+                    border-radius: 5%;
+                    color: $primaryFontColor;
+                    background-color: $primaryColor;
+                    .arrow {
+                        padding-left: 11px;
+                    }
                 }
             }
-            p {
-                color: $secondaryFontColor;
-                font-size: $regular;
-                padding-bottom: 25px;
-            }
-            button[type="submit"] {
-                width: 154px;
-                height: 51px;
-                border: none;
-                border-radius: 5%;
+        }
+        .myServices {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h2 {
+                font-size: $secoundLevelSize;
                 color: $primaryFontColor;
-                background-color: $primaryColor;
-                .arrow {
-                    padding-left: 11px;
+            }
+            p {
+                text-align: center;
+                width: 50%;
+                color: $secondaryFontColor;
+            }
+            .cardsWrapper {
+                padding-top: 50px;
+
+                .cards {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .serviceCard {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        width: 30%;
+                        height: 225px;
+                        padding-top: 35px;
+                        margin-right: 20px;
+                        margin-bottom: 20px;
+                        border: 1px dashed black;
+                        .cardTitle {
+                            width: 100%;
+                            font-size: $thirdLevelSize;
+                            color: $primaryFontColor;
+                        }
+                        .cardParagraph {
+                            width: 100%;
+                            font-size: $fourthLevelSize;
+                            color: $secondaryFontColor;
+                        }
+                    }
                 }
             }
         }

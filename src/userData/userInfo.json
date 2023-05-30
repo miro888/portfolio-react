@@ -9,6 +9,7 @@
     "residence": "BD",
     "freelance": "Avialable",
     "social": [{ "title": "facebook", "url": "www.facebook.com" }],
+    "myServices": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum",
     "languages": [
         {
             "language": "English",
@@ -45,6 +46,32 @@
         },
         {
             "icon": "GIT Knowledge"
+        }
+    ],
+    "services": [
+        {
+            "title": "Web Development",
+            "description": "Blog, E-Comerce"
+        },
+        {
+            "title": "UI/UX Design",
+            "description": "Mobile Website Design"
+        },
+        {
+            "title": "Sound Design",
+            "description": "Voice Over, Beat Making"
+        },
+        {
+            "title": "Game Design",
+            "description": "Character Design, Props & Objects"
+        },
+        {
+            "title": "Photography",
+            "description": "Portrait, Product Photography"
+        },
+        {
+            "title": "Advertising",
+            "desscription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi."
         }
     ]
 }

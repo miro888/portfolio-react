@@ -17,6 +17,10 @@ import draft5 from "./images/draft5.svg";
 import draft6 from "./images/draft6.svg";
 import draft7 from "./images/draft7.svg";
 import arrow from "./images/arrow.svg";
+import development from "./images/development.svg";
+import illustrarion from "./images/illustration.svg";
+import Photographer from "./images/Photographer.svg";
+import coding from "./images/coding.svg";
 import { useState } from "react";
 
 function App() {
@@ -38,6 +42,8 @@ function App() {
         userImage,
         social,
         userImage1,
+        myServices,
+        services,
     } = person;
     // console.log(languages);
 
@@ -189,26 +195,53 @@ function App() {
                 </div>
             </div>
             <div className="middle">
-                <div className="infoWrapper">
-                    <h2>
-                        I'm {firstName + " " + lastName}{" "}
-                        <span className="h2style">Front-End </span>
-                        Developer
-                    </h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Aliquam eaque eos similique suscipit? Ab doloremque
-                        soluta sunt sed illum culpa, maiores excepturi,
-                        asperiores consequatur incidunt modi voluptatibus
-                        facilis, assumenda itaque.
-                    </p>
-                    <button type="submit">
-                        HIRE ME <img src={arrow} alt="" className="arrow" />
-                    </button>
-                </div>
-                <div className="imageDiv">
-                    <img src={userImage1} alt="" />
-                </div>
+                <section className="about">
+                    <div className="infoWrapper">
+                        <h2>
+                            I'm {firstName + " " + lastName}{" "}
+                            <span className="h2style">Front-End </span>
+                            Developer
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Aliquam eaque eos similique suscipit? Ab
+                            doloremque soluta sunt sed illum culpa, maiores
+                            excepturi, asperiores consequatur incidunt modi
+                            voluptatibus facilis, assumenda itaque.
+                        </p>
+                        <button type="submit">
+                            HIRE ME <img src={arrow} alt="" className="arrow" />
+                        </button>
+                    </div>
+                    <div className="imageDiv">
+                        <img src={userImage1} alt="" />
+                    </div>
+                </section>
+
+                <section className="myServices">
+                    <h2>My Services</h2>
+                    <p>{myServices}</p>
+                    <div className="cardsWrapper">
+                        <div className="cards">
+                            {services.map((services, index) => {
+                                return (
+                                    <div key={index} className="serviceCard">
+                                        <img
+                                            src={coding}
+                                            alt="Web Development"
+                                        />
+                                        <p className="cardTitle">
+                                            {services.title}
+                                        </p>
+                                        <p className="cardParagraph">
+                                            {services.description}
+                                        </p>
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    </div>
+                </section>
             </div>
             <div className="sideBarRight">
                 <div className="modeButton">

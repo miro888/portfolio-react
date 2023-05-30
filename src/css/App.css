@@ -174,26 +174,28 @@
   padding-right: 17px;
 }
 .app .middle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   max-width: 970px;
   height: 467px;
 }
-.app .middle .infoWrapper h2 {
+.app .middle .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.app .middle .about .infoWrapper h2 {
   padding-top: 93px;
   padding-bottom: 18px;
   font-size: 48px;
 }
-.app .middle .infoWrapper h2 .h2style {
+.app .middle .about .infoWrapper h2 .h2style {
   color: #ffb400;
 }
-.app .middle .infoWrapper p {
+.app .middle .about .infoWrapper p {
   color: #767676;
   font-size: 16px;
   padding-bottom: 25px;
 }
-.app .middle .infoWrapper button[type=submit] {
+.app .middle .about .infoWrapper button[type=submit] {
   width: 154px;
   height: 51px;
   border: none;
@@ -201,8 +203,67 @@
   color: #2b2b2b;
   background-color: #ffb400;
 }
-.app .middle .infoWrapper button[type=submit] .arrow {
+.app .middle .about .infoWrapper button[type=submit] .arrow {
   padding-left: 11px;
+}
+.app .middle .myServices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.app .middle .myServices h2 {
+  font-size: 32px;
+  color: #2b2b2b;
+}
+.app .middle .myServices p {
+  text-align: center;
+  width: 50%;
+  color: #767676;
+}
+.app .middle .myServices .cardsWrapper {
+  padding-top: 50px;
+}
+.app .middle .myServices .cardsWrapper .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.app .middle .myServices .cardsWrapper .cards .serviceCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  height: 225px;
+  padding-top: 35px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px dashed black;
+}
+.app .middle .myServices .cardsWrapper .cards .serviceCard .cardTitle {
+  width: 100%;
+  font-size: 18px;
+  color: #2b2b2b;
+}
+.app .middle .myServices .cardsWrapper .cards .serviceCard .cardParagraph {
+  width: 100%;
+  font-size: 15px;
+  color: #767676;
 }
 .app .sideBarRight {
   max-width: 110px;

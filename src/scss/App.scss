@@ -69,14 +69,14 @@
 
             .residenceInfo {
                 color: $primaryFontColor;
-                // background-color: $primaryColor;
+                background-color: $primaryColor;
                 height: 24px;
                 font-size: 15px;
                 line-height: 24px;
             }
             .freelanceInfo {
                 color: $primaryFontColor;
-                // background-color: $primaryColor;
+                background-color: $primaryColor;
 
                 height: 24px;
                 font-size: 15px;
@@ -84,7 +84,7 @@
             }
             .addressInfo {
                 color: $primaryFontColor;
-                // background-color: $primaryColor;
+                background-color: $primaryColor;
 
                 height: 24px;
                 font-size: 15px;
@@ -92,7 +92,7 @@
             }
             .jobInfo {
                 color: $primaryFontColor;
-                // background-color: $primaryColor;
+                background-color: $primaryColor;
 
                 height: 24px;
                 font-size: 15px;
@@ -137,12 +137,12 @@
                 }
             }
             .perCentage {
-                // background-color: #7eb942;
+                background-color: #7eb942;
             }
         }
         .buttonDiv {
             #downloadCv {
-                // background-color: $primaryColor;
+                background-color: $primaryColor;
                 cursor: pointer;
                 border: none;
                 font-size: $fourthLevelSize;
@@ -238,21 +238,14 @@
     .sideBarRight {
         max-width: 110px;
         height: 1315px;
-        // background-color: $navColor;
+        background-color: $navColor;
         display: flex;
         flex-direction: column;
         align-items: center;
         .modeButton {
             padding-top: 45px;
             padding-bottom: 215px;
-            .dark-mode {
-                background-color: black;
-                color: #fff;
-            }
-            .light-mode {
-                background-color: #fff;
-                color: black;
-            }
+           
         }
         .icons {
             height: 500px;
@@ -288,8 +281,20 @@
             }
         }
     }
-
-    &.dark-mode{
-        background-color: #7eb942;
+    &.dark-mode {
+        background-color: #212B38;
+        color: #fff;
+        .sidebarLeft{
+            background-color:#212B38;
+        }
+        .sidebarLeft{
+            background-color: #212B38;
+        }
+        .sideBarRight{
+            background-color: #212B38;
+        }
+        .darkModeButtonColor {
+            fill: #7eb942;
+        }
     }
 }

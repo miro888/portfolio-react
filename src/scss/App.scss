@@ -1,6 +1,6 @@
 @import "./variables.scss";
 .app {
-    // background-color: $backColor;
+    background-color: $backColor;
     display: grid;
     grid-template-columns: 3fr 6fr 1fr;
     gap: $offSetLevel_3;
@@ -8,7 +8,7 @@
     .sidebarLeft {
         display: flex;
         flex-direction: column;
-        // background-color: #fff;
+        background-color: #fff;
         padding: 30px 40px;
         .sidebarHead {
             max-width: 150px;
@@ -28,7 +28,7 @@
             padding-bottom: $offSetLevel_3;
             border-bottom: 1.5px solid #f0f0f6;
             .iconDiv {
-                // background-color: $primaryColor;
+                background-color: $primaryColor;
                 padding-top: 4px;
                 padding-right: 10px;
                 padding-bottom: 6px;
@@ -51,7 +51,7 @@
                 .addressInfo {
                     padding-right: 7px;
                     color: $primaryFontColor;
-                    // background-color: $primaryColor;
+                    background-color: $primaryColor;
                     font-size: 15px;
                     line-height: 24px;
                 }
@@ -160,7 +160,7 @@
         height: 467px;
         .about {
             display: flex;
-
+            background-color: #fff;
             .infoWrapper {
                 h2 {
                     padding-top: 93px;
@@ -287,5 +287,9 @@
                 }
             }
         }
+    }
+
+    &.dark-mode{
+        background-color: #7eb942;
     }
 }

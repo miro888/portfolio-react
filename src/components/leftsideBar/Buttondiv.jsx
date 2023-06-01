@@ -1,5 +1,3 @@
-import '../LeftsideBar../../../scss/App.scss';
-
 export  function Buttondiv (props) {
 const img = props;
     return (

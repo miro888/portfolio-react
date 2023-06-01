@@ -156,12 +156,13 @@
         }
     }
     .middle {
-        max-width: 970px;
-        height: 467px;
         .about {
             display: flex;
-            background-color: #fff;
+            background-color: $white;
+            padding: $offSetLevel_3;
+            position: relative;
             .infoWrapper {
+                width: 65%;
                 h2 {
                     padding-top: 93px;
                     padding-bottom: 18px;
@@ -185,6 +186,14 @@
                     .arrow {
                         padding-left: 11px;
                     }
+                }
+            }
+            .imageDiv {
+                
+                img {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
                 }
             }
         }
@@ -236,36 +245,19 @@
     }
 
     .sideBarRight {
-        max-width: 110px;
-        height: 1315px;
         background-color: $navColor;
         display: flex;
         flex-direction: column;
         align-items: center;
         .modeButton {
-            padding-top: 45px;
-            padding-bottom: 215px;
-           
+            margin-top: 45px;
+           margin-bottom: 200px; //დროებით
         }
         .icons {
             height: 500px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-
-            .home {
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                background-color: $primaryColor;
-                position: relative;
-                .activeHome {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
-            }
             .iconWrapper {
                 width: 40px;
                 height: 40px;
@@ -283,18 +275,24 @@
     }
     &.dark-mode {
         background-color: #212B38;
-        color: #fff;
+        color: $white;
         .sidebarLeft{
             background-color:#212B38;
         }
-        .sidebarLeft{
-            background-color: #212B38;
+        .middle{
+            .about {
+                background-color: transparent;
+            }
         }
         .sideBarRight{
             background-color: #212B38;
-        }
-        .darkModeButtonColor {
-            fill: #7eb942;
+            .modeButton {
+                background-color: $white;
+                border-radius: 50%;
+                img {
+                    transform: scale(1.3)
+                }
+            }
         }
     }
 }

@@ -1,15 +1,19 @@
 export  function Buttondiv (props) {
-const img = props;
+const {img, cvUrl} = props;
     return (
         <div className="buttonDiv">
-        <button id="downloadCv">
+        <a href={cvUrl} 
+        target="_blank" 
+        rel="noreferrer" 
+        id="downloadCv"
+        >
             DOWNLOAD CV
             <img
                 src={img}
                 alt="download cv button"
                 className="downloadIcon"
             />
-        </button>
+        </a>
     </div>
     )
 }

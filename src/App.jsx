@@ -7,7 +7,7 @@ import linkdin from "./images/linkdin.svg";
 import tweet from "./images/tweet.svg";
 import yt from "./images/yt.svg";
 import square from "./images/square.svg";
-import download from "./images/download.png";
+import download from "./images/icon-download.svg";
 import draft1 from "./images/draft1.svg";
 import draft2 from "./images/draft2.svg";
 import draft3 from "./images/draft3.svg";
@@ -47,6 +47,7 @@ function App() {
         // skills,
         address,
         job,
+        resumeURL,
         extraSkills,
         userImage,
         social,
@@ -64,7 +65,7 @@ function App() {
                 <Personalinfo age={age} residence={residence} jobtype={freelance} location={address} work={job} />
                 <Languageinfo  langs={languages} />
                 <ExtraSkills skills={extraSkills} img={square} />
-                <Buttondiv img={download} />
+                <Buttondiv cvUrl={resumeURL} img={download} />
             </div>
             <div className="middle">
                 <About name={firstName} lastName={lastName} icon={arrow} img={userImage1} />

@@ -5,11 +5,11 @@ export function About (props) {
     return (
         <section className="about">
         <div className="infoWrapper">
-            <h2>
+            <h1>
                 I'm {name + " " + lastName}{" "}
                 <span className="h2style">Front-End </span>
                 Developer
-            </h2>
+            </h1>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing
                 elit. Aliquam eaque eos similique suscipit? Ab

@@ -1,0 +1,45 @@
+@import "../MiddleScss/../../variables.scss";
+
+
+.about {
+    display: flex;
+    background-color: $white;
+    padding: $offSetLevel_3;
+    position: relative;
+    margin-bottom: $offSetLevel_3 * 3;
+    .infoWrapper {
+        width: 55%;
+        h1 {
+            margin-top: $offSetLevel_3 * 3;
+            margin-bottom: $offSetLevel_3;
+            font-size: $firstLevelSize;
+            .h2style {
+                color: $primaryColor;
+            }
+        }
+        p {
+            color: $secondaryFontColor;
+            font-size: $regular;
+            padding-bottom: 25px;
+        }
+        button[type="submit"] {
+            width: 154px;
+            height: 51px;
+            border: none;
+            border-radius: 5%;
+            color: $primaryFontColor;
+            background-color: $primaryColor;
+            .arrow {
+                padding-left: 11px;
+            }
+        }
+    }
+    .imageDiv {
+        
+        img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}

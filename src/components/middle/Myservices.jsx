@@ -1,4 +1,4 @@
-import '../middle../../../scss/App.scss';
+import '../middle../../../scss/styleOfcompondnts/MiddleScss/Myservices.scss'
 
 export function Myservices(props) {
     const {myservice, todoservices, img} = props;

@@ -1,10 +1,10 @@
 import '../LeftsideBar../../../scss/App.scss';
 
-export function Languageinfo(props) {
-    const { langs } = props;
+export function Skills (props) {
+    const {langs} = props
     return (
         <div className="langInfo">
-            <h2>Languages:</h2>
+            <h2>Skills:</h2>
             {langs.map((lang, index) => {
                 return (
                     <div key={index} className="lang">
@@ -33,5 +33,5 @@ export function Languageinfo(props) {
                 );
             })}
         </div>
-    );
+    )
 }

@@ -1,0 +1,62 @@
+@import '../../variables.scss';
+
+.dark-mode {
+    background-color: #212B38;
+    color: $white;
+    .sidebarLeft{
+        background-color:#212B38;
+    }
+    .middle{
+        .about {
+            background-color: transparent;
+        }
+        .education{
+             
+            .heading{
+                color: $white;
+            p{
+                color: $secondaryFontColor
+            }
+            }
+        .container{
+            background-color: transparent;
+            .cards{
+                .left-card{
+                    h3{
+                        color: $white;
+                    }
+                    p{
+                        color: $white;
+                    }
+                    
+                }
+            }
+        }
+        }
+    }
+    .sideBarRight{
+        background-color: #212B38;
+        .modeButton {
+            background-color: $white;
+            border-radius: 50%;
+            img {
+                transform: scale(1.3)
+            }
+        }
+    }
+    .myServices{
+        h2 {
+            color:$white;
+        }
+    }
+    .langInfo{
+        h2 {
+            color: $white;
+        }
+    }
+    .extraSkillsInfo{
+        h2 {
+            color: $white;
+        }
+    }
+}

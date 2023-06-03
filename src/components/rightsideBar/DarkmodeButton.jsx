@@ -1,4 +1,4 @@
-import '../middle../../../scss/App.scss';
+import '../middle../../../scss/styleOfcompondnts/RightScss/sideBarRight.scss';
 
 export function DarkmodeButton (props){
     const {icon, toggle} = props;
@@ -12,3 +12,5 @@ export function DarkmodeButton (props){
     </div>
     )
 }
+
+

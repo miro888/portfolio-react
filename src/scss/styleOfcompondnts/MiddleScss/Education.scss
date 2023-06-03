@@ -1,0 +1,93 @@
+@import "../MiddleScss/../../variables.scss";
+
+
+.education{
+    margin-bottom: 70px;
+    .heading{
+        text-align: center;  
+        margin-bottom: 1.5rem;
+        font-family: $Inter;
+        font-style: normal;
+        font-weight: $Bold;
+        font-size: $offSetLevel_3;
+        line-height: 123.6%;
+        text-transform: capitalize;
+        color: $primaryFontColor;
+        p{
+            padding: 0 20% 0 20%;
+            font-family: $Inter;
+            font-style: normal;
+            font-weight: $RegularNormal;
+            font-size: $fourthLevelSize;
+            line-height: $LinMedium;
+            text-align: center;
+            text-transform: capitalize;
+        }
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        background-color:$white;
+        height: $Bold;
+        .cards{
+            display: flex;
+            height: auto;
+            border: 1.5px solid #F0F0F6 ;
+            .left-card{
+                width: 100%;
+                padding: 2% 0 0 5%;
+                margin-right: 8%;
+                h3{
+                    font-family: $Inter;
+                    font-style: normal;
+                    font-weight:$Medium;
+                    font-size: $thirdLevelSize;
+                    color: $primaryFontColor;
+                    text-transform: capitalize;
+                    margin-bottom: 10%;
+                }
+                p{
+                    display: inline;
+                    margin-right: 10%;
+                    font-family: $Inter;
+                    font-style: normal;
+                    font-weight: $RegularNormal;
+                    font-size: $thirdLevelSize;
+                    line-height: $LinMedium;
+                    color: $primaryFontColor;
+                }
+                span{
+                    background-color: $primaryColor;
+                    display: inline;
+                    font-family: $Inter;
+                    font-style: normal;
+                    font-weight: $RegularNormal;
+                    font-size: $regular;
+                    line-height: $LineUnderneath;
+                    color: #FFFFFF;
+                }
+            }
+            .right-card{
+                padding: 2% 5% 0 0;
+                h3{
+                    font-family: $Inter;
+                    font-style: normal;
+                    font-weight: $Medium;
+                    font-size: $thirdLevelSize;
+                    line-height: $LineLower;
+                    text-transform: capitalize;
+                }
+                p{
+                    font-family: $Inter;
+                    font-style: normal;
+                    font-weight: $RegularNormal;
+                    font-size: $fourthLevelSize;
+                    line-height: $LinMedium;
+                    text-transform: capitalize;
+                    color: $secondaryFontColor;
+                }
+                
+            }
+        }
+    }
+}

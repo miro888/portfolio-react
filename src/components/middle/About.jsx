@@ -1,4 +1,4 @@
-import '../middle../../../scss/App.scss';
+import '../middle../../../scss/styleOfcompondnts/MiddleScss/About.scss'
 
 export function About (props) {
     const {name,lastName, icon, img } = props

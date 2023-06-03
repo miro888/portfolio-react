@@ -79,5 +79,32 @@
             "title": "Advertising",
             "desscription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi."
         }
+    ],
+    "education":{
+        "additional": "In GeoLab we teach the students how to create and organize dynamic websites. A dynamic website is saved on a web server in a form of scripts, templates and other data. Such website is located on a server as separate components.",
+        "items": [
+        {
+            "title": "GeoLab",
+            "learner": "Student",
+            "graduation": "Jan 1016 - Dec 2023",
+            "certificate": "Certificate of Web Training",
+            "description": " GeoLab - is a mobile and web applications laboratory. This space is open 24 hours for different, interesting and innovative projects. The training center is an indivisible part of GeoLab, which provides various directions to match anyone’s sphere of interest."
+        },
+        {
+            "title": "Programming Course",
+            "learner": "Student",
+            "graduation": "Jan 1016 - Dec 2021",
+            "certificate": "Certificate of Web Training",
+            "description": "GeoLab - is a mobile and web applications laboratory. This space is open 24 hours for different, interesting and innovative projects. The training center is an indivisible part of GeoLab, which provides various directions to match anyone’s sphere of interest."
+        },
+        {
+            "title": "Web Developer Course",
+            "learner": "Student",
+            "graduation": "Jan 1016 - Dec 2021",
+            "certificate": "Certificate of Web Training",
+            "description": "GeoLab - is a mobile and web applications laboratory. This space is open 24 hours for different, interesting and innovative projects. The training center is an indivisible part of GeoLab, which provides various directions to match anyone’s sphere of interest."
+        }
+
     ]
+}
 }

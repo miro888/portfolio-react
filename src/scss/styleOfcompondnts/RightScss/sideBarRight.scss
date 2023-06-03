@@ -1,0 +1,33 @@
+@import "../../variables.scss";
+
+.sideBarRight {
+    background-color: $navColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $offSetLevel_3 0;
+    height: fit-content;
+    .modeButton {
+        cursor: pointer;
+       margin-bottom: 200px; //დროებით
+    }
+    .icons {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .iconWrapper {
+            width: 40px;
+            height: 40px;
+            background-color: #f0f0f6;
+            border-radius: 50%;
+            position: relative;
+            .activeIcons {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}

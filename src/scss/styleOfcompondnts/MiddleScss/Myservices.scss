@@ -4,41 +4,84 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  
     h2 {
-        font-size: $secoundLevelSize;
-        color: $primaryFontColor;
+      font-size: 20px;
+      color: black;
     }
+  
     p {
-        text-align: center;
-        width: 50%;
-        color: $secondaryFontColor;
+      text-align: center;
+      width: 50%;
+      color: gray;
     }
+  
     .cardsWrapper {
-        padding-top: 50px;
-        .cards {
-            display: flex;
-            flex-wrap: wrap;
-            .serviceCard {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                width: 30%;
-                height: 225px;
-                padding-top: 35px;
-                margin-right: 20px;
-                margin-bottom: 20px;
-                border: 1px dashed black;
-                .cardTitle {
-                    width: 100%;
-                    font-size: $thirdLevelSize;
-                    color: $primaryFontColor;
-                }
-                .cardParagraph {
-                    width: 100%;
-                    font-size: $fourthLevelSize;
-                    color: $secondaryFontColor;
-                }
+      padding-top: 50px;
+  
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap:18px;
+        margin-bottom: 70px;
+        .serviceCard {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 32%;
+          height: 200px;
+          background-color: $white;
+          padding-top: 3%;
+          
+          
+          
+            .tamra{
+              font-family: 'Inter';
+              font-style: normal;
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 123.6%;
+              text-transform: capitalize;
+              color: #2B2B2B;
+              padding-top: 0;
             }
+            .niniko{
+              font-family: 'Inter';
+              font-style: normal;
+              font-weight: 400;
+              font-size: 15px;
+              line-height: 24px;
+              text-align: center;
+              text-transform: capitalize;
+              color: #767676;
+              width: 90%;
+             
+            }
+            .sopio{
+              font-family: 'Roboto';
+              font-style: normal;
+              font-weight: 700;
+              font-size: 12px;
+              line-height: 14px;
+              color: #FFB400;
+              width: 100%;
+              text-align: center;
+              text-decoration: none;
+            }
+
+        
+          .cardTitle {
+            width: 100%;
+            font-size: 16px;
+            color: black;
+          }
+          .cardParagraph {
+            width: 100%;
+            font-size: 14px;
+            color: gray;
+          }
         }
+      }
     }
-}
+  }
+  

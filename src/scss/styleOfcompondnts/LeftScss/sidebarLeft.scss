@@ -1,0 +1,10 @@
+@import '../LeftScss/../../variables.scss';
+
+
+.sidebarLeft {
+    display: flex;
+    flex-direction: column;
+    background-color:$white;
+    padding: 30px 40px;
+    height: fit-content;
+}

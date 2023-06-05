@@ -1,4 +1,4 @@
-import '../LeftsideBar../../../scss/App.scss';
+import '../../scss/styleOfcompondnts/LeftScss/Languageinfo.scss';
 
 export function Languageinfo(props) {
     const { langs } = props;

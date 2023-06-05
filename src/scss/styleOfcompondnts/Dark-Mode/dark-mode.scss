@@ -28,14 +28,14 @@
                     p{
                         color: $white;
                     }
-                    
                 }
             }
         }
         }
     }
+  
     .sideBarRight{
-        background-color: #212B38;
+        background-color: transparent;
         .modeButton {
             background-color: $white;
             border-radius: 50%;
@@ -44,11 +44,41 @@
             }
         }
     }
-    .myServices{
+                                        // MY SERVICES
+
+                                        
+    .myServices { 
         h2 {
-            color:$white;
+          color: $white;
         }
-    }
+        p {
+          color: gray;
+        }
+        .cardsWrapper {
+          .cards {
+            .serviceCard {
+              background-color: transparent;
+              .tamra{
+                  color: $white; 
+                }
+                .niniko{
+                  color: #767676;
+                }
+                .sopio{
+                  color: #FFB400;
+                }
+              .cardTitle {
+                color: $white;
+              }
+              .cardParagraph {
+                color: gray;
+              }
+            }
+          }
+        }
+      }
+
+
     .langInfo{
         h2 {
             color: $white;
@@ -59,4 +89,45 @@
             color: $white;
         }
     }
+
+                                        //Contact Form
+
+
+.containerForm{
+    // .formHeading{
+    // }
+    .mainContainer {
+      
+        .cardLeft{
+            background-color: transparent;
+            label{
+                color:$secondaryFontColor;
+            }
+            input{
+                background-color: #F0F0F6;
+                border-color: transparent;
+
+            }
+            textarea{
+                border-color: transparent;
+                background-color: #F0F0F6;
+            }
+            button{
+                background-color: $primaryColor;
+                border-color: transparent;
+            }
+        }
+        .mainCard{
+            .cardRight{
+                 background-color: transparent;
+                 p{
+                    color: $secondaryFontColor;
+                    span{
+                        color: $secondaryFontColor;
+                    }
+                 }
+             }
+        }
+}
+}
 }

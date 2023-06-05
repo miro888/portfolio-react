@@ -1,3 +1,5 @@
+import '../../scss/styleOfcompondnts/LeftScss/Buttondiv.scss'
+
 export  function Buttondiv (props) {
 const {img, cvUrl} = props;
     return (

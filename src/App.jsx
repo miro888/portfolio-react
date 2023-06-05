@@ -1,5 +1,6 @@
 import "./scss/App.scss";
 import './scss/styleOfcompondnts/Dark-Mode/dark-mode.scss';
+import './scss/styleOfcompondnts/LeftScss/sidebarLeft.scss'
 
 import person from "./userData/userInfo.json";
 import fb from "./images/fb.svg";
@@ -18,18 +19,18 @@ import draft5 from "./images/draft5.svg";
 import draft6 from "./images/draft6.svg";
 import draft7 from "./images/draft7.svg";
 import arrow from "./images/arrow.svg";
+
+// import './images/ContactFormICONS/Dot.svg';
+// import '../../images/ContactFormICONS/Email.svg';
+// import'../../images/ContactFormICONS/Flag.svg';
 // import development from "./images/development.svg";
 // import illustrarion from "./images/illustration.svg";
 // import Photographer from "./images/Photographer.svg";
 import coding from "./images/coding.svg";
 import { useState } from "react";
 import {Buttondiv, ExtraSkills, Languageinfo, Skills, LeftsideBar, Personalinfo, Socialicons} from "./components/leftsideBar";
-import { About, Education, Myservices } from "./components/middle";
+import { About, ContactForm, Education, Myservices } from "./components/middle";
 import { DarkmodeButton, Icons } from "./components/rightsideBar";
-
-
-
-
 
 function App() {
     const [darkMode, setdarkMode] = useState(() => {
@@ -56,8 +57,10 @@ function App() {
         social,
         userImage1,
         myServices,
+        advertising,
         services,
         education,
+        contactinfo,
     } = person;
 
 
@@ -74,8 +77,9 @@ function App() {
                 </div>
                 <div className="middle">
                     <About name={firstName} lastName={lastName} icon={arrow} img={userImage1} />
-                    <Myservices myservice={myServices} todoservices={services} img={coding}  />
+                    <Myservices myservice={myServices} advertice={advertising} todoservices={services} img={coding}  />
                     <Education study={education}/>
+                    <ContactForm info={contactinfo} /> 
                 </div>
 
                 <div className="sideBarRight">

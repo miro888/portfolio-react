@@ -1,0 +1,22 @@
+@import '../LeftScss/../../variables.scss';
+
+.buttonDiv {
+    text-align: center;
+    #downloadCv {
+        background-color: $primaryColor;
+        cursor: pointer;
+        display: inline-block;
+        font-size: $fourthLevelSize;
+        text-decoration: none;
+        color: $primaryFontColor;
+        padding: 20px 40px;
+        .downloadIcon {
+            padding-left: 20px;
+            padding-right: 17px;
+        }
+    }
+    #downloadCv:hover {
+        background-color: #27ae60; 
+        cursor: pointer; 
+      }
+}

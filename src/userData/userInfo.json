@@ -54,6 +54,11 @@
             "icon": "GIT Knowledge"
         }
     ],
+    "advertising":{
+            "title": "Advertising",
+            "desscription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi.",
+            "orderlink": "ORDER NOW  > "
+    },
     "services": [
         {
             "title": "Web Development",
@@ -74,11 +79,8 @@
         {
             "title": "Photography",
             "description": "Portrait, Product Photography"
-        },
-        {
-            "title": "Advertising",
-            "desscription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi."
         }
+     
     ],
     "education":{
         "additional": "In GeoLab we teach the students how to create and organize dynamic websites. A dynamic website is saved on a web server in a form of scripts, templates and other data. Such website is located on a server as separate components.",
@@ -104,7 +106,35 @@
             "certificate": "Certificate of Web Training",
             "description": "GeoLab - is a mobile and web applications laboratory. This space is open 24 hours for different, interesting and innovative projects. The training center is an indivisible part of GeoLab, which provides various directions to match anyone’s sphere of interest."
         }
-
     ]
-}
+    },
+
+    "contactinfo": [
+        {   
+          
+            "data": [
+                { "icons":"../userData/images/ContactFormICONS/Dot.svg"},
+                { "label": "Country", "value": "Georgia" },
+                { "label": "City", "value": "Tbilisi" },
+                { "label": "Street", "value": "Dumbadze" }
+              ]
+        },
+        {   
+            "data": [
+                { "icons":"../userData/images/ContactFormICONS/Dot.svg"},
+                { "label": "Email", "value": "blalala@gmail.com" },
+                { "label": "Skype", "value": "@blalala" },
+                { "label": "Telegram", "value": "@telegram" }
+              ]
+        },
+        {   
+            "data": [
+                { "icons":"../userData/images/ContactFormICONS/Dot.svg"},
+                { "label": "Support Services", "value": "12345" },
+                { "label": "Office", "value": "+302 405 203 402" },
+                { "label": "Personal", "value": "+58 (021) 213 343 123" }
+              ]
+        }
+      ]
+
 }

@@ -1,3 +1,4 @@
+import '../../scss/styleOfcompondnts/LeftScss/LeftsideBar.scss';
 export function LeftsideBar (props) {
     const { img,name,lastName} = props;
     return (

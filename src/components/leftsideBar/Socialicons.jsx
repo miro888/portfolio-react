@@ -1,5 +1,4 @@
-import '../LeftsideBar../../../scss/App.scss';
-
+import '../../scss/styleOfcompondnts/LeftScss/Socialicons.scss';
 export function Socialicons (props) {
     const {Link,icon_1,icon_2,icon_3,icon_4,icon_5,icon_6} = props;
     

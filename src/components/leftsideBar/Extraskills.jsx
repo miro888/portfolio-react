@@ -1,4 +1,4 @@
-import '../LeftsideBar../../../scss/App.scss';
+import '../../scss/styleOfcompondnts/LeftScss/ExtraSkills.scss';
 
 export function ExtraSkills (props) {
     const { skills , img} = props;

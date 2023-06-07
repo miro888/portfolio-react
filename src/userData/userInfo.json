@@ -9,12 +9,14 @@
     "residence": "BD",
     "freelance": "Avialable",
     "resumeURL": "https://drive.google.com/file/d/1ZmW_lD2I2T7yD8JKlDUiU2Eydz2Xpl1w/view",
+
     "social": [
-        { 
-            "title": "facebook", 
-            "url": "www.facebook.com" 
-    }
+        {
+            "title": "facebook",
+            "url": "www.facebook.com"
+        }
     ],
+    "aboutUser": "Lorem ipsum dolorconsectetur adipisicing elit. Aliquam eaque eos similique suscipit? ab doloremque soluta sunt sed illum culpa, maiores excepturi, asperiores consequatur incidunt modi coluptatibus facilis, assumenda itaque.",
     "myServices": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum",
     "languages": [
         {
@@ -54,10 +56,10 @@
             "icon": "GIT Knowledge"
         }
     ],
-    "advertising":{
-            "title": "Advertising",
-            "desscription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi.",
-            "orderlink": "ORDER NOW  > "
+    "advertising": {
+        "title": "Advertising",
+        "desscription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi.",
+        "orderlink": "ORDER NOW  > "
     },
     "services": [
         {
@@ -80,61 +82,58 @@
             "title": "Photography",
             "description": "Portrait, Product Photography"
         }
-     
     ],
-    "education":{
+    "education": {
         "additional": "In GeoLab we teach the students how to create and organize dynamic websites. A dynamic website is saved on a web server in a form of scripts, templates and other data. Such website is located on a server as separate components.",
         "items": [
-        {
-            "title": "GeoLab",
-            "learner": "Student",
-            "graduation": "Jan 1016 - Dec 2023",
-            "certificate": "Certificate of Web Training",
-            "description": " GeoLab - is a mobile and web applications laboratory. This space is open 24 hours for different, interesting and innovative projects. The training center is an indivisible part of GeoLab, which provides various directions to match anyone’s sphere of interest."
-        },
-        {
-            "title": "Programming Course",
-            "learner": "Student",
-            "graduation": "Jan 1016 - Dec 2021",
-            "certificate": "Certificate of Web Training",
-            "description": "GeoLab - is a mobile and web applications laboratory. This space is open 24 hours for different, interesting and innovative projects. The training center is an indivisible part of GeoLab, which provides various directions to match anyone’s sphere of interest."
-        },
-        {
-            "title": "Web Developer Course",
-            "learner": "Student",
-            "graduation": "Jan 1016 - Dec 2021",
-            "certificate": "Certificate of Web Training",
-            "description": "GeoLab - is a mobile and web applications laboratory. This space is open 24 hours for different, interesting and innovative projects. The training center is an indivisible part of GeoLab, which provides various directions to match anyone’s sphere of interest."
-        }
-    ]
+            {
+                "title": "GeoLab",
+                "learner": "Student",
+                "graduation": "Jan 1016 - Dec 2023",
+                "certificate": "Certificate of Web Training",
+                "description": " GeoLab - is a mobile and web applications laboratory. This space is open 24 hours for different, interesting and innovative projects. The training center is an indivisible part of GeoLab, which provides various directions to match anyone’s sphere of interest."
+            },
+            {
+                "title": "Programming Course",
+                "learner": "Student",
+                "graduation": "Jan 1016 - Dec 2021",
+                "certificate": "Certificate of Web Training",
+                "description": "GeoLab - is a mobile and web applications laboratory. This space is open 24 hours for different, interesting and innovative projects. The training center is an indivisible part of GeoLab, which provides various directions to match anyone’s sphere of interest."
+            },
+            {
+                "title": "Web Developer Course",
+                "learner": "Student",
+                "graduation": "Jan 1016 - Dec 2021",
+                "certificate": "Certificate of Web Training",
+                "description": "GeoLab - is a mobile and web applications laboratory. This space is open 24 hours for different, interesting and innovative projects. The training center is an indivisible part of GeoLab, which provides various directions to match anyone’s sphere of interest."
+            }
+        ]
     },
 
     "contactinfo": [
-        {   
-          
+        {
             "data": [
-                { "icons":"../userData/images/ContactFormICONS/Dot.svg"},
+                { "icons": "../userData/images/ContactFormICONS/Dot.svg" },
                 { "label": "Country", "value": "Georgia" },
                 { "label": "City", "value": "Tbilisi" },
                 { "label": "Street", "value": "Dumbadze" }
-              ]
+            ]
         },
-        {   
+        {
             "data": [
-                { "icons":"../userData/images/ContactFormICONS/Dot.svg"},
+                { "icons": "../userData/images/ContactFormICONS/Dot.svg" },
                 { "label": "Email", "value": "blalala@gmail.com" },
                 { "label": "Skype", "value": "@blalala" },
                 { "label": "Telegram", "value": "@telegram" }
-              ]
+            ]
         },
-        {   
+        {
             "data": [
-                { "icons":"../userData/images/ContactFormICONS/Dot.svg"},
+                { "icons": "../userData/images/ContactFormICONS/Dot.svg" },
                 { "label": "Support Services", "value": "12345" },
                 { "label": "Office", "value": "+302 405 203 402" },
                 { "label": "Personal", "value": "+58 (021) 213 343 123" }
-              ]
+            ]
         }
-      ]
-
+    ]
 }

@@ -3,5 +3,8 @@
     background-color: $backColor;
     display: grid;
     grid-template-columns: 3fr 6fr 0.7fr;
-    gap: $offSetLevel_3; 
+    gap: $offSetLevel_3;
+}
+html {
+    scroll-behavior: smooth;
 }

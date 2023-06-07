@@ -1,4 +1,4 @@
-@import '../LeftScss/../../variables.scss';
+@import "../LeftScss/../../variables.scss";
 
 .buttonDiv {
     text-align: center;
@@ -9,6 +9,7 @@
         font-size: $fourthLevelSize;
         text-decoration: none;
         color: $primaryFontColor;
+        opacity: 0.8;
         padding: 20px 40px;
         .downloadIcon {
             padding-left: 20px;
@@ -16,7 +17,8 @@
         }
     }
     #downloadCv:hover {
-        background-color: #27ae60; 
-        cursor: pointer; 
-      }
+        opacity: 1;
+        // background-color: #27ae60;
+        // cursor: pointer;
+    }
 }

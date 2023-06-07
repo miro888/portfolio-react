@@ -1,4 +1,4 @@
-@import '../LeftScss/../../variables.scss';
+@import "../LeftScss/../../variables.scss";
 
 .socIcons {
     display: flex;
@@ -14,7 +14,9 @@
         border-radius: 50%;
     }
     .iconDiv:hover {
-        background-color: #27ae60; 
-        cursor: pointer; 
-      }
+        // background-color: #3e8e41;
+        cursor: pointer;
+        transform: scale(1.2);
+        transition: all 0.5s ease-in-out;
+    }
 }

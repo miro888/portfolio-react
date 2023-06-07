@@ -1,6 +1,5 @@
 @import "../MiddleScss/../../variables.scss";
 
-
 .about {
     display: flex;
     background-color: $white;
@@ -29,17 +28,18 @@
             border-radius: 5%;
             color: $primaryFontColor;
             background-color: $primaryColor;
+            opacity: 0.8;
+            cursor: pointer;
             .arrow {
                 padding-left: 11px;
             }
         }
         button:hover {
-            background-color: #27ae60; 
-            cursor: pointer; 
-          }
+            opacity: 1;
+            // background-color: #27ae60;
+        }
     }
     .imageDiv {
-        
         img {
             position: absolute;
             bottom: 0;

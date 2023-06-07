@@ -1,10 +1,9 @@
+import "../middle../../../scss/styleOfcompondnts/MiddleScss/Education.scss";
 
-import '../middle../../../scss/styleOfcompondnts/MiddleScss/Education.scss'
-
-export function Education (props) {
-    const { study} = props;
+export function Education(props) {
+    const { study } = props;
     return (
-        <section className='education' >
+        <section className="education" id="Education">
             <div className="heading">
                 <h2>Education</h2>
                 <p>{study.additional}</p>
@@ -12,7 +11,7 @@ export function Education (props) {
             <div className="container">
                 {study.items.map((lang, index) => {
                     return (
-                        <div key={index} className='cards' >
+                        <div key={index} className="cards">
                             <div className="left-card">
                                 <h3>{lang.title}</h3>
                                 <p>{lang.learner}</p>
@@ -27,8 +26,5 @@ export function Education (props) {
                 })}
             </div>
         </section>
-    )
+    );
 }
-
-
-

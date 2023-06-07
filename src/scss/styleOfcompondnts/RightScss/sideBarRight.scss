@@ -1,22 +1,21 @@
 @import "../../variables.scss";
 
 .sideBarRight {
-    background-color: $navColor;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     padding: $offSetLevel_3 0;
     position: fixed;
-    right: 0;
-    width: 6.25em;
+    right: 2%;
     .iconWrapper > a:active {
         color: $primaryFontColor;
         background-color: $primaryColor;
+        border-radius: 50%;
     }
     .modeButton {
         cursor: pointer;
-        // margin-bottom: 200px; //დროებით
+        margin-bottom: 5rem; //დროებით
     }
     .icons {
         height: 500px;
@@ -29,11 +28,16 @@
             background-color: #f0f0f6;
             border-radius: 50%;
             position: relative;
-            .activeIcons {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                .activeIcons {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
             }
         }
     }

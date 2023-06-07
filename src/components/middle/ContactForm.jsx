@@ -14,13 +14,13 @@ export function ContactForm(props) {
             </div>
             <div className="mainContainer">
                 <form className="cardLeft">
-                    <label for="name">Your Full Name ( Required)</label>
+                    <label htmlFor="name">Your Full Name ( Required)</label>
                     <input type="text" id="name" name="name" required />
 
-                    <label for="email">Your Email (Required)</label>
+                    <label htmlFor="email">Your Email (Required)</label>
                     <input type="email" id="email" name="email" required />
 
-                    <label for="subject">Subject</label>
+                    <label htmlFor="subject">Subject</label>
                     <input
                         type="subject"
                         id="subject"
@@ -28,9 +28,9 @@ export function ContactForm(props) {
                         required
                     />
 
-                    <label for="massage">Your Massage</label>
+                    <label htmlFor="massage">Your Massage</label>
                     <textarea type="massage" id="massage">
-                        {" "}
+                        
                     </textarea>
 
                     <button type="submit">SEND MESSAGE</button>

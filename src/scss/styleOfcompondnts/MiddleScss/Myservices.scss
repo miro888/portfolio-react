@@ -21,6 +21,8 @@
   
       .cards {
         display: flex;
+        justify-content: center;
+        align-items: baseline;
         flex-wrap: wrap;
         gap:18px;
         margin-bottom: 70px;
@@ -32,44 +34,11 @@
           height: 200px;
           background-color: $white;
           padding-top: 3%;
-          
-          
-          
-            .tamra{
-              font-family: 'Inter';
-              font-style: normal;
-              font-weight: 500;
-              font-size: 18px;
-              line-height: 123.6%;
-              text-transform: capitalize;
-              color: #2B2B2B;
-              padding-top: 0;
-            }
-            .niniko{
-              font-family: 'Inter';
-              font-style: normal;
-              font-weight: 400;
-              font-size: 15px;
-              line-height: 24px;
-              text-align: center;
-              text-transform: capitalize;
-              color: #767676;
-              width: 90%;
-             
-            }
-            .sopio{
-              font-family: 'Roboto';
-              font-style: normal;
-              font-weight: 700;
-              font-size: 12px;
-              line-height: 14px;
-              color: #FFB400;
-              width: 100%;
-              text-align: center;
-              text-decoration: none;
-            }
-
-        
+          img {
+            width: 70px;
+            height: 70px;
+            display: block;
+          }
           .cardTitle {
             width: 100%;
             font-size: 16px;

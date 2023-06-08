@@ -26,7 +26,7 @@ import arrow from "./images/arrow.svg";
 // import development from "./images/development.svg";
 // import illustrarion from "./images/illustration.svg";
 // import Photographer from "./images/Photographer.svg";
-import coding from "./images/coding.svg";
+// import coding from "./images/coding.svg";
 import { useState } from "react";
 import {
     Buttondiv,
@@ -64,8 +64,7 @@ function App() {
         userImage,
         social,
         userImage1,
-        myServices,
-        advertising,
+        myServiceDescription,
         services,
         education,
         contactinfo,
@@ -110,10 +109,8 @@ function App() {
                     aboutUser={aboutUser}
                 />
                 <Myservices
-                    myservice={myServices}
-                    advertice={advertising}
+                    myservice={myServiceDescription}
                     todoservices={services}
-                    img={coding}
                 />
                 <Education study={education} />
                 <ContactForm info={contactinfo} />

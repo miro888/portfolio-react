@@ -3,20 +3,22 @@
 .socIcons {
     display: flex;
     justify-content: space-around;
-    padding-bottom: $offSetLevel_3;
-    border-bottom: 1.5px solid #f0f0f6;
+    padding: $offSetLevel_3 - 10 0 $offSetLevel_3;
+    border-bottom: 1px solid #f0f0f6;
     .iconDiv {
         background-color: $primaryColor;
-        padding-top: 4px;
-        padding-right: 10px;
-        padding-bottom: 6px;
-        padding-left: 10px;
+        padding: 10px;
         border-radius: 50%;
+        transition: all 0.3s ease-in-out;
+        img {
+            width: 15px;
+            height: 15px;
+            display: block;
+        }
     }
     .iconDiv:hover {
         // background-color: #3e8e41;
         cursor: pointer;
         transform: scale(1.2);
-        transition: all 0.5s ease-in-out;
     }
 }

@@ -17,7 +17,6 @@
         }
     ],
     "aboutUser": "Lorem ipsum dolorconsectetur adipisicing elit. Aliquam eaque eos similique suscipit? ab doloremque soluta sunt sed illum culpa, maiores excepturi, asperiores consequatur incidunt modi coluptatibus facilis, assumenda itaque.",
-    "myServices": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum",
     "languages": [
         {
             "language": "English",
@@ -26,6 +25,14 @@
         {
             "language": "Spanish",
             "level": 60
+        },
+        {
+            "language": "Georgian",
+            "level": 99
+        },
+        {
+            "language": "Arabic",
+            "level": 68
         }
     ],
     "skills": [
@@ -40,6 +47,14 @@
         {
             "language": "Js",
             "level": 30
+        },
+        {
+            "language": "С#",
+            "level": 20
+        },
+        {
+            "language": "python",
+            "level": 40
         }
     ],
     "extraSkills": [
@@ -54,33 +69,52 @@
         },
         {
             "icon": "GIT Knowledge"
+        },
+        {
+            "icon": "npm, Knowledge"
         }
     ],
-    "advertising": {
-        "title": "Advertising",
-        "desscription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi.",
-        "orderlink": "ORDER NOW  > "
-    },
+    "myServiceDescription": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum",
     "services": [
         {
             "title": "Web Development",
-            "description": "Blog, E-Comerce"
+            "description": "Blog, E-Comerce",
+            "iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/development.svg"
         },
         {
             "title": "UI/UX Design",
-            "description": "Mobile Website Design"
-        },
-        {
-            "title": "Sound Design",
-            "description": "Voice Over, Beat Making"
+            "description": "Mobile Website Design",
+            "iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/design.svg"
         },
         {
             "title": "Game Design",
-            "description": "Character Design, Props & Objects"
+            "description": "Character Design, Props & Objects",
+            "iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/game-design.svg"
         },
         {
             "title": "Photography",
-            "description": "Portrait, Product Photography"
+            "description": "Portrait, Product Photography",
+            "iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/photography.svg"
+        },
+         {
+            "title": "Web Development",
+            "description": "Blog, E-Comerce",
+            "iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/development.svg"
+        },
+        {
+            "title": "UI/UX Design",
+            "description": "Mobile Website Design",
+            "iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/design.svg"
+        },
+        {
+            "title": "Game Design",
+            "description": "Character Design, Props & Objects",
+            "iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/game-design.svg"
+        },
+        {
+            "title": "Photography",
+            "description": "Portrait, Product Photography",
+            "iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/photography.svg"
         }
     ],
     "education": {
@@ -112,27 +146,54 @@
 
     "contactinfo": [
         {
+            "iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/design.svg",
             "data": [
-                { "icons": "../userData/images/ContactFormICONS/Dot.svg" },
-                { "label": "Country", "value": "Georgia" },
-                { "label": "City", "value": "Tbilisi" },
-                { "label": "Street", "value": "Dumbadze" }
+                { 
+                    "label": "Country", 
+                    "value": "Georgia" 
+                },
+                { 
+                    "label": "City", 
+                    "value": "Tbilisi" 
+                },
+                { 
+                    "label": "Street", 
+                    "value": "Dumbadze" 
+                }
             ]
         },
         {
+            "iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/photography.svg",
             "data": [
-                { "icons": "../userData/images/ContactFormICONS/Dot.svg" },
-                { "label": "Email", "value": "blalala@gmail.com" },
-                { "label": "Skype", "value": "@blalala" },
-                { "label": "Telegram", "value": "@telegram" }
+                { 
+                    "label": "Email", 
+                    "value": "blalala@gmail.com" 
+                },
+                { 
+                    "label": "Skype", 
+                    "value": "@blalala" 
+                },
+                { 
+                    "label": "Telegram", 
+                    "value": "@telegram" 
+                }
             ]
         },
         {
+            "iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/game-design.svg",
             "data": [
-                { "icons": "../userData/images/ContactFormICONS/Dot.svg" },
-                { "label": "Support Services", "value": "12345" },
-                { "label": "Office", "value": "+302 405 203 402" },
-                { "label": "Personal", "value": "+58 (021) 213 343 123" }
+                { 
+                    "label": "Support Services", 
+                    "value": "12345" 
+                },
+                { 
+                    "label": "Office", 
+                    "value": "+302 405 203 402" 
+                },
+                { 
+                    "label": "Personal", 
+                    "value": "+58 (021) 213 343 123" 
+                }
             ]
         }
     ]

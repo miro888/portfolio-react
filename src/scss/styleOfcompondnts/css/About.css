@@ -43,4 +43,17 @@
   position: absolute;
   bottom: 0;
   right: 0;
+}
+.about .shape {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  border: 2px solid transparent;
+}
+.about .square {
+  -webkit-transform: rotate(26deg);
+          transform: rotate(26deg);
+}
+.about .circle {
+  border-radius: 50%;
 }/*# sourceMappingURL=About.css.map */

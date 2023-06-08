@@ -17,6 +17,32 @@
         }
     ],
     "aboutUser": "Lorem ipsum dolorconsectetur adipisicing elit. Aliquam eaque eos similique suscipit? ab doloremque soluta sunt sed illum culpa, maiores excepturi, asperiores consequatur incidunt modi coluptatibus facilis, assumenda itaque.",
+    "shapes": [
+        {
+            "shape": "circle"
+        },
+        {
+            "shape": "square"
+        },
+        {
+            "shape": "circle"
+        },
+        {
+            "shape": "square"
+        },
+        {
+            "shape": "circle"
+        },
+        {
+            "shape": "square"
+        },
+        {
+            "shape": "circle"
+        },
+        {
+            "shape": "square"
+        }
+    ],
     "languages": [
         {
             "language": "English",
@@ -96,7 +122,7 @@
             "description": "Portrait, Product Photography",
             "iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/photography.svg"
         },
-         {
+        {
             "title": "Web Development",
             "description": "Blog, E-Comerce",
             "iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/development.svg"
@@ -148,51 +174,51 @@
         {
             "iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/design.svg",
             "data": [
-                { 
-                    "label": "Country", 
-                    "value": "Georgia" 
+                {
+                    "label": "Country",
+                    "value": "Georgia"
                 },
-                { 
-                    "label": "City", 
-                    "value": "Tbilisi" 
+                {
+                    "label": "City",
+                    "value": "Tbilisi"
                 },
-                { 
-                    "label": "Street", 
-                    "value": "Dumbadze" 
+                {
+                    "label": "Street",
+                    "value": "Dumbadze"
                 }
             ]
         },
         {
             "iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/photography.svg",
             "data": [
-                { 
-                    "label": "Email", 
-                    "value": "blalala@gmail.com" 
+                {
+                    "label": "Email",
+                    "value": "blalala@gmail.com"
                 },
-                { 
-                    "label": "Skype", 
-                    "value": "@blalala" 
+                {
+                    "label": "Skype",
+                    "value": "@blalala"
                 },
-                { 
-                    "label": "Telegram", 
-                    "value": "@telegram" 
+                {
+                    "label": "Telegram",
+                    "value": "@telegram"
                 }
             ]
         },
         {
             "iconPath": "https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/service-icons/game-design.svg",
             "data": [
-                { 
-                    "label": "Support Services", 
-                    "value": "12345" 
+                {
+                    "label": "Support Services",
+                    "value": "12345"
                 },
-                { 
-                    "label": "Office", 
-                    "value": "+302 405 203 402" 
+                {
+                    "label": "Office",
+                    "value": "+302 405 203 402"
                 },
-                { 
-                    "label": "Personal", 
-                    "value": "+58 (021) 213 343 123" 
+                {
+                    "label": "Personal",
+                    "value": "+58 (021) 213 343 123"
                 }
             ]
         }

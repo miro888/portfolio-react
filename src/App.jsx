@@ -69,6 +69,7 @@ function App() {
         education,
         contactinfo,
         aboutUser,
+        shapes,
     } = person;
 
     return (
@@ -107,6 +108,7 @@ function App() {
                     icon={arrow}
                     img={userImage1}
                     aboutUser={aboutUser}
+                    shapes={shapes}
                 />
                 <Myservices
                     myservice={myServiceDescription}

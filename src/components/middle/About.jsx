@@ -1,7 +1,8 @@
 import "../middle../../../scss/styleOfcompondnts/MiddleScss/About.scss";
 
 export function About(props) {
-    const { name, lastName, icon, img, aboutUser } = props;
+    const { name, lastName, icon, img, aboutUser, shapes } = props;
+    console.log(shapes);
     return (
         <section className="about">
             <div className="infoWrapper">
@@ -18,6 +19,26 @@ export function About(props) {
             <div className="imageDiv">
                 <img src={img} alt="" />
             </div>
+
+            {shapes
+                ? shapes.map((item, index) => {
+                      return (
+                          <span
+                              className={`${item.shape} shape`}
+                              key={index}
+                              style={{
+                                  top: Math.floor(Math.random() * 95) + "%",
+                                  left: Math.floor(Math.random() * 95) + "%",
+                                  borderColor:
+                                      "#" +
+                                      Math.floor(
+                                          Math.random() * 16777215
+                                      ).toString(16),
+                              }}
+                          ></span>
+                      );
+                  })
+                : null}
         </section>
     );
 }

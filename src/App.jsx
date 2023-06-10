@@ -33,7 +33,7 @@ import {
     ExtraSkills,
     Languageinfo,
     Skills,
-    LeftsideBar,
+    LeftsideHeader,
     Personalinfo,
     Socialicons,
 } from "./components/leftsideBar";
@@ -75,10 +75,11 @@ function App() {
     return (
         <div className={`app ${darkMode ? "dark-mode" : "light-mode"}`}>
             <div className="sidebarLeft">
-                <LeftsideBar
+                <LeftsideHeader
                     img={userImage}
                     name={firstName}
                     lastName={lastName}
+                    freelanceStatus={freelance}
                 />
                 <Socialicons
                     link={social.url}

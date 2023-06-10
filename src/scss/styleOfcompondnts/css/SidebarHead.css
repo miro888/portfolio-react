@@ -1,0 +1,12 @@
+.sidebarHead {
+  max-width: 150px;
+  margin: 0 auto;
+}
+.sidebarHead .personImage {
+  border-radius: 50%;
+  display: block;
+  width: 100%;
+}
+.sidebarHead .fullname {
+  font-weight: bold;
+}/*# sourceMappingURL=SidebarHead.css.map */

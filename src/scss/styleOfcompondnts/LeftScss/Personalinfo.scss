@@ -1,4 +1,4 @@
-@import '../LeftScss/../../variables.scss';
+@import "../LeftScss/../../variables.scss";
 
 .personInfo {
     padding-top: $offSetLevel_3;
@@ -9,6 +9,7 @@
         padding-bottom: 10px;
         justify-content: space-between;
         align-items: center;
+
         .ageInfo,
         .residenceInfo,
         .freelanceInfo,
@@ -27,16 +28,16 @@
         }
         .freelanceStyle {
             font-size: $fourthLevelSize;
-            color: #7eb942;
+            text-transform: capitalize;
+            &.available {
+                color: $available;
+            }
+            &.busy {
+                color: $busy;
+            }
         }
     }
-    .residenceInfo {
-        color: $primaryFontColor;
-        background-color: $primaryColor;
-        height: 24px;
-        font-size: 15px;
-        line-height: 24px;
-    }
+
     .freelanceInfo {
         color: $primaryFontColor;
         background-color: $primaryColor;

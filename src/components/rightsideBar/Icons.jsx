@@ -5,7 +5,7 @@ export function Icons(props) {
     return (
         <div className="icons">
             <div className="iconWrapper">
-                <a href="#">
+                <a href="#about">
                     <img src={icon_1} alt="" className="activeIcons" />
                 </a>
             </div>

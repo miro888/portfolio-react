@@ -93,7 +93,7 @@ function App() {
                 <Personalinfo
                     age={age}
                     residence={residence}
-                    jobtype={freelance}
+                    jobType={freelance}
                     location={address}
                     work={job}
                 />

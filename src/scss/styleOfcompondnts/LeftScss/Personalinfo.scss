@@ -9,11 +9,11 @@
         padding-bottom: 10px;
         justify-content: space-between;
         align-items: center;
-
         .ageInfo,
         .residenceInfo,
         .freelanceInfo,
-        .addressInfo {
+        .addressInfo,
+        .jobInfo {
             padding-right: 7px;
             color: $primaryFontColor;
             background-color: $primaryColor;

@@ -1,7 +1,7 @@
 import "../../scss/styleOfcompondnts/LeftScss/Personalinfo.scss";
 
 export function Personalinfo(props) {
-    const { age, residence, jobtype, location, work } = props;
+    const { age, jobType, location, work } = props;
     return (
         <div className="personInfo">
             <div className="personInfoDiv">
@@ -13,12 +13,12 @@ export function Personalinfo(props) {
                 <span className="freelanceInfo">Freelance :</span>
                 <span
                     className={`freelanceStyle ${
-                        jobtype.toLowerCase() === "available"
+                        jobType.toLowerCase() === "available"
                             ? "available"
                             : "busy"
                     }`}
                 >
-                    {jobtype}
+                    {jobType}
                 </span>
             </div>
             <div className="personInfoDiv">
@@ -26,7 +26,7 @@ export function Personalinfo(props) {
                 <span className="addressStyle">{location}</span>
             </div>
             <div className="personInfoDiv">
-                <span className="jobInfo">Job : </span>
+                <span className="jobInfo">Job :</span>
                 <span className="jobStyle">{work}</span>
             </div>
         </div>

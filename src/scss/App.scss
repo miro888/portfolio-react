@@ -2,8 +2,20 @@
 .app {
     background-color: $backColor;
     display: grid;
-    grid-template-columns: 3fr 6fr 0.7fr;
+    // grid-template-columns: 3fr 6fr 0.7fr;
+    grid-template-areas: 
+    "sidebarLeft middle";
+    padding-right: 100px;    
     gap: $offSetLevel_3;
+}
+.middle {
+    grid-area: middle;
+}
+.sidebarLeft{
+    grid-area: sidebarLeft;
+}
+.sideBarRight {
+    grid-area: sideBarRight;
 }
 html {
     scroll-behavior: smooth;

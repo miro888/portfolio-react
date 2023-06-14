@@ -29,7 +29,7 @@ import {
     Personalinfo,
     Socialicons,
 } from "./components/leftsideBar";
-import { About, ContactForm, Education, Myservices } from "./components/middle";
+import { About, Education, Myservices } from "./components/middle";
 import { DarkmodeButton, Icons } from "./components/rightsideBar";
 
 function App() {

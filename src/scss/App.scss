@@ -2,11 +2,12 @@
 .app {
     background-color: $backColor;
     display: grid;
-    // grid-template-columns: 3fr 6fr 0.7fr;
     grid-template-areas: 
-    "sidebarLeft middle";
-    padding-right: 100px;    
+    "sidebarLeft middle sideBarRight";
     gap: $offSetLevel_3;
+    @media (max-width: $xsDesktop) {
+        grid-template-columns: auto auto auto;
+    }
 }
 .middle {
     grid-area: middle;

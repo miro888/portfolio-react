@@ -5,6 +5,26 @@
     display: flex;
     flex-direction: column;
     background-color:$white;
-    padding: 30px 40px;
+    padding: $offSetLevel_3 $offSetLevel_3 * 2;
     height: fit-content;
+    transition-duration: .5s;
+    .arrow {
+        display: none;
+    }
+    @media (max-width: $smDesktop) {
+        padding: $offSetLevel_2 $offSetLevel_3;
+    }
+    @media (max-width: $xsDesktop) {
+        position: relative;
+        .arrow {
+            content: '>';
+            display: block;
+            position: absolute;
+            top: 50%;
+            right: -15px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            transition: .5s;
+        }
+    }
 }

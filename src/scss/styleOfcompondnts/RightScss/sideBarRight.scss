@@ -1,15 +1,17 @@
 @import "../../variables.scss";
 
 .sideBarRight {
+    background-color: #FAFAFA;
+    box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.5);
+    padding: $offSetLevel_3;
+    position: relative;
+    @media (max-width: $smDesktop) {
+        padding: $offSetLevel_2 $offSetLevel_3;
+    }
+    .wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #FAFAFA;
-    padding: $offSetLevel_3 0;
-    position: fixed;
-    right: 2%;
-    width: 4.75rem;
-    box-shadow: -5px 5px 20px rgba(0, 0, 0, 0.5);
     .iconWrapper > a:active {
         color: $primaryFontColor;
         background-color: $primaryColor;
@@ -42,5 +44,6 @@
                 }
             }
         }
+    }
     }
 }

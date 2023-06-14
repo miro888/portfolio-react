@@ -7,7 +7,7 @@
     position: relative;
     margin-bottom: $offSetLevel_3 * 3;
     .infoWrapper {
-        width: 55%;
+        width: 60%;
         h1 {
             margin-top: $offSetLevel_3 * 3;
             margin-bottom: $offSetLevel_3;
@@ -15,11 +15,18 @@
             .h2style {
                 color: $primaryColor;
             }
+            @media (max-width: $smDesktop) {
+                margin-top: 0;
+                font-size: $secoundLevelSize;
+            }
         }
         p {
             color: $secondaryFontColor;
             font-size: $regular;
             padding-bottom: 25px;
+            @media (max-width: $smDesktop) {
+                font-size: $fourthLevelSize;
+            }
         }
         button[type="submit"] {
             position: relative;
@@ -46,8 +53,9 @@
             position: absolute;
             z-index: 2;
             bottom: 0;
-            right: 0;
-            height: 95%;
+            right: 5%;
+            max-height: 95%;
+            max-width: 300px;
         }
     }
     .shape {

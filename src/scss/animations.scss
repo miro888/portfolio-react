@@ -45,3 +45,12 @@
         transform: skewY(0deg);
     }
 }
+
+@keyframes blink {
+    from {
+        opacity: .1;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -8,6 +8,7 @@
     padding: $offSetLevel_3 $offSetLevel_3 * 2;
     height: fit-content;
     transition-duration: .5s;
+    box-shadow: 5px 0 10px -6px $white  ;
     .arrow {
         display: none;
     }
@@ -21,7 +22,7 @@
             display: block;
             position: absolute;
             top: 50%;
-            right: -15px;
+            right: -20px;
             transform: translateY(-50%);
             cursor: pointer;
             transition: .5s;

@@ -1,12 +1,6 @@
 import "../middle../../../scss/styleOfcompondnts/MiddleScss/About.scss";
 export function About(props) {
     const { name, lastName, icon, img, aboutUser, shapes } = props;
-
-
-
-    function createShapes() {
-
-    }
     return (
         <section className="about" id="about">
             <div className="infoWrapper">
@@ -33,7 +27,7 @@ export function About(props) {
                             style={{
                                 top: Math.floor(Math.random() * 85 + 10) + "%",
                                 left: Math.floor(Math.random() * 85 + 10) + "%",
-                                animationDelay: `.${index * 40}s`,
+                                animationDelay: `.${index + 5}s`,
                                 borderColor:
                                     "#" +
                                     Math.floor(

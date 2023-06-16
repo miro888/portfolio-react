@@ -4,7 +4,7 @@ export function Languageinfo(props) {
     const { langs } = props;
     return (
         <div className="langInfo">
-            <h2>Languages:</h2>
+            <h2>Languages</h2>
             {langs.map((lang, index) => {
                 return (
                     <div key={index} className="lang">

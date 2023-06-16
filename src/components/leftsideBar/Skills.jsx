@@ -4,7 +4,7 @@ export function Skills (props) {
     const {langs} = props
     return (
         <div className="langInfo">
-            <h2>Skills:</h2>
+            <h2>Skills</h2>
             {langs.map((lang, index) => {
                 return (
                     <div key={index} className="lang">
@@ -12,7 +12,6 @@ export function Skills (props) {
                             <span>{lang.language}</span>{" "}
                             <span>{lang.level + "%"}</span>
                         </div>
-
                         <div
                             className="lines"
                             style={{

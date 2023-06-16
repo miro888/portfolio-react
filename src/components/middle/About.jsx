@@ -1,7 +1,12 @@
 import "../middle../../../scss/styleOfcompondnts/MiddleScss/About.scss";
-
 export function About(props) {
     const { name, lastName, icon, img, aboutUser, shapes } = props;
+
+
+
+    function createShapes() {
+
+    }
     return (
         <section className="about" id="about">
             <div className="infoWrapper">
@@ -21,22 +26,23 @@ export function About(props) {
 
             {shapes
                 ? shapes.map((item, index) => {
-                      return (
-                          <span
-                              className={`${item.shape} shape`}
-                              key={index}
-                              style={{
-                                  top: Math.floor(Math.random() * 85 + 10) + "%",
-                                  left: Math.floor(Math.random() * 85 + 10) + "%",
-                                  borderColor:
-                                      "#" +
-                                      Math.floor(
-                                          Math.random() * 16777215
-                                      ).toString(16),
-                              }}
-                          ></span>
-                      );
-                  })
+                    return (
+                        <span
+                            className={`${item.shape} shape shake-animation`}
+                            key={index}
+                            style={{
+                                top: Math.floor(Math.random() * 85 + 10) + "%",
+                                left: Math.floor(Math.random() * 85 + 10) + "%",
+                                animationDelay: `.${index * 40}s`,
+                                borderColor:
+                                    "#" +
+                                    Math.floor(
+                                        Math.random() * 16777215
+                                    ).toString(16),
+                            }}
+                        ></span>
+                    );
+                })
                 : null}
         </section>
     );

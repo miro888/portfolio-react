@@ -1,5 +1,5 @@
 @import "../MiddleScss/../../variables.scss";
-
+@import '../../animations.scss';
 .about {
     display: flex;
     background-color: $white;
@@ -71,4 +71,7 @@
     .circle {
         border-radius: 50%;
     }
+}
+.shake-animation {
+    animation: skew-y-shakeing .8s infinite;
 }

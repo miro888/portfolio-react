@@ -43,8 +43,8 @@ function App() {
     function triggerSideBar() {
         setCollapsed(!collapsed)
     }
-    async function setVars(data) {
-        setUserInfo(await data)
+    function setVars(data) {
+        setUserInfo(data)
     }
 
     const toggledarkMode = () => {
@@ -98,7 +98,7 @@ function App() {
                         <div
                             className="arrow"
                             onClick={triggerSideBar}
-                            style={!collapsed ? {transform: `rotate(180deg)`} : {transform: `rotate(0)`}}
+                            style={!collapsed ? {transform: `rotate(180deg) translateX(25px)`} : {transform: `rotate(0)`}}
                         >
                             <svg fill={darkMode ? "#ffb400" : "#000"} version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                                 width="20px" height="20px" viewBox="0 0 351.409 351.409"
@@ -115,7 +115,8 @@ function App() {
                                         c30.6-1.225,55.691-34.272,72.216-55.692c12.24-15.912,23.256-33.048,33.66-50.184c5.508-9.181,12.852-18.973,17.748-29.376
                                         c26.928-0.612,76.5,5.508,78.336-29.988C341.145,145.728,287.9,142.056,256.688,141.444z M132.452,310.968
                                         c-0.612,1.225-1.224,3.061-1.836,4.896c-1.224,0.612-1.836,1.836-2.448,2.448c1.224-3.672,2.448-7.345,4.284-11.017
-                                        C132.452,307.908,132.452,309.132,132.452,310.968z"/>
+                                        C132.452,307.908,132.452,309.132,132.452,310.968z"
+                                    />
                                 </g>
                             </svg>
                         </div>

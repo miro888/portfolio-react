@@ -28,6 +28,13 @@
             cursor: pointer;
             transition: .5s;
             padding: $offSetLevel_3;
+            &:hover {
+                scale: 1.2;
+            }
+            @media (max-width: $xsTablet) {
+                padding: $offSetLevel_1;
+                right: -$offSetLevel_3 - 10;
+            }
         }
     }
 }

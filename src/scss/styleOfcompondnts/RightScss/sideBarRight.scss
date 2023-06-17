@@ -8,10 +8,23 @@
     @media (max-width: $smDesktop) {
         padding: $offSetLevel_2 $offSetLevel_3;
     }
+    @media (max-width: $xsTablet) {
+        padding: $offSetLevel_2 $offSetLevel_1;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 200;
+    }
     .wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media (max-width: $xsTablet) {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
     .iconWrapper > a:active {
         color: $primaryFontColor;
         background-color: $primaryColor;
@@ -19,13 +32,22 @@
     }
     .modeButton {
         cursor: pointer;
-        margin-bottom: 5rem; //დროებით
+        margin-bottom: 5rem;
+        @media (max-width: $xsTablet) {
+            margin-bottom: 0;
+        }
     }
     .icons {
         height: 500px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        @media (max-width: $xsTablet) {
+            width: 90%;
+            justify-content: space-evenly;
+            height: unset;
+            flex-direction: row;
+        }
         .iconWrapper {
             width: 40px;
             height: 40px;
@@ -33,6 +55,10 @@
             border-radius: 50%;
             position: relative;
             transition: .3s;
+            @media (max-width: $xsTablet) {
+                width: 30px;
+                height: 30px;
+            }
             &:hover {
                 background-color: $primaryColor;
             }

@@ -12,6 +12,9 @@
     @media (max-width: $smTablet) {
         gap: $offSetLevel_2;
     }
+    @media (max-width: $xsTablet) {
+        padding-bottom: $offSetLevel_3;
+    }
 }
 .middle {
     grid-area: middle;

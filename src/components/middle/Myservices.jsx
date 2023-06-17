@@ -5,14 +5,16 @@ export function Myservices(props) {
 
     return (
         <section className="myServices" id="MyServices">
-            <h2>My Services</h2>
-            <p>{myservice}</p>
+           <div className="heading">
+                <h2>My Services</h2>
+                <p>{myservice}</p>
+           </div>
             <div className="cardsWrapper">
                 <div className="cards">
                     {todoservices.map((service, index) => (
                         <div key={index} className="serviceCard">
                             <img src={service.iconPath} alt="Web Development" />
-                            <p className="cardTitle">{service.title}</p>
+                            <h3 className="cardTitle">{service.title}</h3>
                             <p className="cardParagraph">
                                 {service.description}
                             </p>

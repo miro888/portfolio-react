@@ -9,6 +9,9 @@
     @media (max-width: $xsDesktop) {
         grid-template-columns: auto auto auto;
     }
+    @media (max-width: $smTablet) {
+        gap: $offSetLevel_2;
+    }
 }
 .middle {
     grid-area: middle;

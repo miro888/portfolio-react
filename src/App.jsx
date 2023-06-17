@@ -38,44 +38,20 @@ function App() {
         return storedDarkMode ? JSON.parse(storedDarkMode) : "false";
     });
     const [userInfo, setUserInfo] = useState(null)
-
     // hide leftsidebar
     const [collapsed, setCollapsed] = useState(false)
     function triggerSideBar() {
         setCollapsed(!collapsed)
     }
     async function setVars(data) {
-
         setUserInfo(await data)
-        console.log(data)
     }
 
     const toggledarkMode = () => {
         setdarkMode(!darkMode);
         localStorage.setItem("darkMode", JSON.stringify(!darkMode));
     };
-    // const {
-    //     firstName,
-    //     lastName,
-    //     residence,
-    //     freelance,
-    //     age,
-    //     languages,
-    //     skills,
-    //     address,
-    //     job,
-    //     resumeURL,
-    //     extraSkills,
-    //     userImage,
-    //     social,
-    //     userImage1,
-    //     myServiceDescription,
-    //     services,
-    //     education,
-    //     contactinfo,
-    //     aboutUser,
-    //     shapes,
-    // } = person;
+   
     useEffect(() => {
         fetch('https://raw.githubusercontent.com/Gkhundadze/staticFiles/main/personInfo.json')
             .then((res) => {
@@ -84,6 +60,9 @@ function App() {
             .then((response) => {
                 setVars(response)
             })
+        if(window.innerWidth < 1171) {
+            setCollapsed(true)
+        }
     }, [])
     return (
         <div className={`app ${darkMode ? "dark-mode" : "light-mode"}`}>

@@ -8,6 +8,9 @@
     margin-bottom: $offSetLevel_3 * 3;
     .infoWrapper {
         width: 60%;
+        @media (max-width: $smTablet) {
+            width: 100%;
+        }
         h1 {
             margin-top: $offSetLevel_3 * 3;
             margin-bottom: $offSetLevel_3;
@@ -18,6 +21,12 @@
             @media (max-width: $smDesktop) {
                 margin-top: 0;
                 font-size: $secoundLevelSize;
+            }
+            @media (max-width: $xsDesktop) {
+                font-size: $thirdLevelSize + 10;
+            }
+            @media (max-width: $xsTablet) {
+                font-size: $thirdLevelSize;
             }
         }
         p {
@@ -38,17 +47,27 @@
             background-color: $primaryColor;
             opacity: 0.8;
             cursor: pointer;
+            @media (max-width: $xsTablet) {
+                font-size: $regular - 4;
+                position: absolute;
+                bottom: $offSetLevel_2;
+                left: $offSetLevel_2;
+            }
             .arrow {
                 padding-left: 11px;
             }
         }
         button:hover {
             opacity: 1;
-            // background-color: #27ae60;
         }
     }
     .imageDiv {
-
+        @media (max-width: $smTablet) {
+            align-self: center;
+        }
+        @media (max-width: $xsTablet) {
+            align-self: flex-end;
+        }
         img {
             position: absolute;
             z-index: 2;
@@ -56,6 +75,10 @@
             right: 5%;
             max-height: 95%;
             max-width: 300px;
+            @media (max-width: $smTablet) {
+                position: static;
+                max-width: 200px;
+            }
         }
     }
     .shape {
@@ -70,6 +93,10 @@
     }
     .circle {
         border-radius: 50%;
+    }
+    @media (max-width: $smTablet) {
+        padding: $offSetLevel_2;
+        flex-direction: column;
     }
 }
 .shake-animation {

@@ -16,16 +16,18 @@
         padding: $offSetLevel_2 $offSetLevel_3;
     }
     @media (max-width: $xsDesktop) {
-        position: relative;
+        z-index: 100;
+        position: absolute;
         .arrow {
             content: '>';
             display: block;
             position: absolute;
-            top: 50%;
-            right: -20px;
+            top: 50vh;
+            right: -$offSetLevel_3*2;
             transform: translateY(-50%);
             cursor: pointer;
             transition: .5s;
+            padding: $offSetLevel_3;
         }
     }
 }

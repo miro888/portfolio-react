@@ -13,7 +13,7 @@ export function Myservices(props) {
                 <div className="cards">
                     {todoservices.map((service, index) => (
                         <div key={index} className="serviceCard">
-                            <img src={service.iconPath} alt="Web Development" />
+                            {/* <img src={service.iconPath} alt={service.title} /> */}
                             <h3 className="cardTitle">{service.title}</h3>
                             <p className="cardParagraph">
                                 {service.description}

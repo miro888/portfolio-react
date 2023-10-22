@@ -1,12 +1,7 @@
 import "./scss/App.scss";
 import "./scss/styleOfcompondnts/Dark-Mode/dark-mode.scss";
 import "./scss/styleOfcompondnts/LeftScss/sidebarLeft.scss";
-import fb from "./images/fb.svg";
-// import icon from "./images/icon.svg";
-// import insta from "./images/insta.svg";
-import linkdin from "./images/linkdin.svg";
-// import tweet from "./images/tweet.svg";
-// import yt from "./images/yt.svg";
+
 import square from "./images/square.svg";
 import download from "./images/icon-download.svg";
 import draft1 from "./images/draft1.svg";
@@ -27,7 +22,7 @@ import {
   Personalinfo,
   Socialicons,
 } from "./components/leftsideBar";
-import { About, Education, Myservices } from "./components/middle";
+import { About, Education, Myservices, Projects } from "./components/middle";
 import { DarkmodeButton, Icons } from "./components/rightsideBar";
 
 function App() {
@@ -143,7 +138,7 @@ function App() {
               todoservices={userInfo.services}
             />
             <Education study={userInfo.education} />
-            {/* <ContactForm info={userInfo.contactinfo} /> */}
+            <Projects cards={userInfo.projects} />
           </div>
           <div className="sideBarRight">
             <div className="wrapper">

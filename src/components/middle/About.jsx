@@ -5,7 +5,7 @@ export function About(props) {
         <section className="about" id="about">
             <div className="infoWrapper">
                 <h1>
-                    I'm {name + " " + lastName}{" "}
+                    I'm {name + " " + lastName}
                     <span className="h2style">Front-End </span>
                     Developer
                 </h1>
@@ -15,7 +15,7 @@ export function About(props) {
                 </button>
             </div>
             <div className="imageDiv">
-                <img src={img} alt="" />
+                <img src={img} alt="something" />
             </div>
 
             {shapes

@@ -1,26 +1,30 @@
 @import "../MiddleScss/../../variables.scss";
 
 
-.education{
-    margin-bottom: 70px;
-    .heading{
-        text-align: center;  
+.education {
+    margin:4rem 0;
+
+    .heading {
+        text-align: center;
         margin-bottom: 1.5rem;
         font-family: $Inter;
         font-style: normal;
         font-weight: $Bold;
         text-transform: capitalize;
         color: $primaryFontColor;
-        h2{
+
+        h2 {
             font-size: $secoundLevelSize;
             margin-bottom: $offSetLevel_2;
             display: inline-block;
             border-bottom: 1px solid $white;
+
             @media (max-width: $xsTablet) {
                 font-size: $thirdLevelSize*1.5;
-              }
+            }
         }
-        p{
+
+        p {
             width: 80%;
             margin: 0 auto;
             font-family: $Inter;
@@ -32,36 +36,45 @@
             text-transform: capitalize;
         }
     }
-    .container{
+
+    .container {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        background-color:$white;
+        background-color: $white;
         gap: $offSetLevel_2;
-        .cards{
+        border-radius: 20px;
+
+        .cards {
             display: flex;
-            border: 1.5px solid #F0F0F6;
+            border:$secondaryFontColor 2px solid;
             padding-bottom: $offSetLevel_1;
-            .left-card{
+            border-style: none;
+
+
+            .left-card {
                 padding: 2% 0 0 5%;
                 margin-right: 8%;
                 @media (max-width: $smTablet) {
-                padding: 10px 0 0 15px;
-                margin-right: 15px;
+                    padding: 10px 0 0 15px;
+                    margin-right: 15px;
                 }
-                h3{
+
+                h3 {
                     font-family: $Inter;
                     font-style: normal;
-                    font-weight:$Medium;
+                    font-weight: $Medium;
                     font-size: $thirdLevelSize;
                     color: $primaryFontColor;
                     text-transform: capitalize;
                     margin-bottom: 10%;
+
                     @media (max-width: $xsTablet) {
                         word-break: break-all;
                     }
                 }
-                p{
+
+                p {
                     display: inline;
                     margin-right: 10%;
                     font-family: $Inter;
@@ -71,7 +84,8 @@
                     line-height: $LinMedium;
                     color: $primaryFontColor;
                 }
-                span{
+
+                span {
                     background-color: $primaryColor;
                     font-family: $Inter;
                     font-style: normal;
@@ -81,12 +95,15 @@
                     color: $white;
                 }
             }
-            .right-card{
+
+            .right-card {
                 padding: 2% 5% 0 0;
+
                 @media (max-width: $smTablet) {
                     padding: 10px 5px;
-                    }
-                h3{
+                }
+
+                h3 {
                     font-family: $Inter;
                     font-style: normal;
                     font-weight: $Medium;
@@ -94,7 +111,8 @@
                     line-height: $LineLower;
                     text-transform: capitalize;
                 }
-                p{
+
+                p {
                     font-family: $Inter;
                     font-style: normal;
                     font-weight: $RegularNormal;
@@ -103,7 +121,7 @@
                     text-transform: capitalize;
                     color: $secondaryFontColor;
                 }
-                
+
             }
         }
     }

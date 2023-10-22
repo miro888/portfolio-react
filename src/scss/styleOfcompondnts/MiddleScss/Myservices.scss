@@ -13,15 +13,18 @@
     font-weight: $Bold;
     text-transform: capitalize;
     color: $primaryFontColor;
-    h2{
+
+    h2 {
       font-size: $secoundLevelSize;
       margin-bottom: $offSetLevel_2;
       display: inline-block;
       border-bottom: 1px solid $white;
+
       @media (max-width: $xsTablet) {
         font-size: $thirdLevelSize*1.5;
       }
-  }
+    }
+
     p {
       width: 80%;
       margin: 0 auto;
@@ -32,11 +35,13 @@
       line-height: $LinMedium;
       text-align: center;
       text-transform: capitalize;
+
       @media (max-width: $smTablet) {
         width: 90%;
       }
     }
   }
+
   .cardsWrapper {
     padding-top: 50px;
 
@@ -47,6 +52,7 @@
       flex-wrap: wrap;
       gap: $offSetLevel_3;
       margin-bottom: 70px;
+
       .serviceCard {
         display: flex;
         flex-direction: column;
@@ -54,9 +60,13 @@
         background-color: $white;
         text-align: center;
         max-width: 200px;
+        border-radius: 20px;
+        padding: 8px;
+
         @media (max-width: $xsTablet) {
           width: 100%;
         }
+
         img {
           height: 150px;
           width: 100%;

@@ -34,6 +34,9 @@
             line-height: $LinMedium;
             text-align: center;
             text-transform: capitalize;
+            @media (max-width: $xsDesktop) {
+                padding: 3rem;
+            }
         }
     }
 
@@ -44,12 +47,22 @@
         background-color: $white;
         gap: $offSetLevel_2;
         border-radius: 20px;
+        @media (max-width: $xsDesktop) {
+            padding: 3rem;
+        }
 
         .cards {
             display: flex;
             border:$secondaryFontColor 2px solid;
             padding-bottom: $offSetLevel_1;
             border-style: none;
+            
+            
+             @media (max-width: $xsDesktop) {
+            padding: 1rem;
+            flex-direction: column;
+            height: 100%;
+        }
 
 
             .left-card {

@@ -15,7 +15,7 @@ export function About(props) {
                 </button>
             </div>
             <div className="imageDiv">
-                <img src={img} alt="something" />
+                <img src={img} alt="something" className="app-logo" />
             </div>
 
             {shapes

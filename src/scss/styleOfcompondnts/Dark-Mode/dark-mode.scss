@@ -37,7 +37,6 @@
                     border-radius: 20px;
 
                     .left-card {
-
                         h3 {
                             color: $white;
                         }
@@ -53,24 +52,37 @@
 
     .sideBarRight {
         background-color: transparent;
+        @media (max-width: $xsDesktop) {
+            background-color: #212B38;            
+        }
+        .wrapper {
+            .icons {
+                .modeButton {
+                    background-color: $white;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    margin-bottom: 2.5rem;
+                    margin-top: 1rem;
 
-        .modeButton {
-            background-color: $white;
-            border-radius: 50%;
-            margin-bottom: 2.5rem;
-            margin-top: 1rem;
+                    .darkModeButtonColor {
+                        width: 30px;
+                        height: 30px;
+                        transform: scale(1.5)
+                    }
 
-            img {
-                transform: scale(1.3)
+                }
             }
+
         }
     }
+
 
     // MY SERVICES
 
 
     .myServices {
-     
+
         h2 {
             color: $white;
         }
@@ -80,14 +92,14 @@
         }
 
         .cardsWrapper {
-          
+
             .cards {
                 .serviceCard {
                     background-color: transparent;
-                    border:$secondaryFontColor 2px solid;
-                  
-                    border-radius: 20px;   
-           
+                    border: $secondaryFontColor 2px solid;
+
+                    border-radius: 20px;
+
 
                     .cardTitle {
                         color: $white;
@@ -105,7 +117,8 @@
         h2 {
             color: $white;
         }
-        h3{
+
+        h3 {
             color: $white;
         }
     }
@@ -122,13 +135,10 @@
         }
     }
 
-    //Contact Form
 
 
     .containerForm {
 
-        // .formHeading{
-        // }
         .mainContainer {
 
             .cardLeft {

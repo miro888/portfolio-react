@@ -1,15 +1,12 @@
 import "./scss/App.scss";
 import "./scss/styleOfcompondnts/Dark-Mode/dark-mode.scss";
 import "./scss/styleOfcompondnts/LeftScss/sidebarLeft.scss";
-
 import square from "./images/square.svg";
 import download from "./images/icon-download.svg";
 import draft1 from "./images/draft1.svg";
 import draft2 from "./images/draft2.svg";
 import draft3 from "./images/draft3.svg";
 import draft4 from "./images/draft4.svg";
-import draft5 from "./images/draft5.svg";
-import draft6 from "./images/draft6.svg";
 import draft7 from "./images/draft7.svg";
 import arrow from "./images/arrow.svg";
 import { useEffect, useState } from "react";
@@ -23,7 +20,7 @@ import {
   Socialicons,
 } from "./components/leftsideBar";
 import { About, Education, Myservices, Projects } from "./components/middle";
-import { DarkmodeButton, Icons } from "./components/rightsideBar";
+import { Icons } from "./components/rightsideBar";
 
 function App() {
   const [darkMode, setdarkMode] = useState(() => {
@@ -43,7 +40,6 @@ function App() {
     setdarkMode(!darkMode);
     localStorage.setItem("darkMode", JSON.stringify(!darkMode));
   };
-
 
   useEffect(() => {
     fetch(
@@ -142,14 +138,14 @@ function App() {
           </div>
           <div className="sideBarRight">
             <div className="wrapper">
-              <DarkmodeButton icon={draft7} toggle={toggledarkMode} />
+             
               <Icons
+                toggle={toggledarkMode}
                 icon_1={draft1}
                 icon_2={draft2}
                 icon_3={draft3}
                 icon_4={draft4}
-                icon_5={draft5}
-                icon_6={draft6}
+                icon_7={draft7}
               />
             </div>
           </div>

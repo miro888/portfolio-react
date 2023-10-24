@@ -22,6 +22,7 @@
 
       @media (max-width: $xsTablet) {
         font-size: $thirdLevelSize*1.5;
+        padding: 3rem;
       }
     }
 
@@ -39,6 +40,9 @@
       @media (max-width: $smTablet) {
         width: 90%;
       }
+      @media (max-width: $xsDesktop) {
+        padding: 3rem;
+    }
     }
   }
 
